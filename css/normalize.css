@@ -131,7 +131,7 @@ code, kbd, pre, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em
  * Add the correct margin in IE 8.
  */
 
-figure { margin: 1em 40px; }
+figure { margin: 0; }
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.

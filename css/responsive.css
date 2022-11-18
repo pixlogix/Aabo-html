@@ -7,7 +7,7 @@
 @media only screen and (max-width: 1023px) {
 	body { min-width:320px; }
 	img{ max-width: 100%; width:auto; height:auto; }
-	.wrap { width:auto; padding:0 20px; }
+	.wrap, .wrap-small { width:auto; padding:0 20px; }
 	
 	.buttonset .col a { margin:0 5px 8px 0; }
 	.default-grid.cols4 .col { width:50%; }
