@@ -167,8 +167,31 @@
 					$("#header").removeClass("sticky");
 				}
 			});
-			var header = document.querySelectorAll('#header');
-			Stickyfill.add(header);
+			
+		}
+
+		// aabo customer slider
+
+		if($(".aabo-customer-slider").length) {
+			var swiper = new Swiper('.aabo-customer-slider', {
+				direction: 'horizontal',
+				spaceBetween: 20,
+				slidesPerView: 4,
+				// slidesPerColumn: 1,
+				loop: true,
+				navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+				breakpoints: {
+					1200:{slidesPerView: 4},
+					// 1023: {slidesPerView: 6},
+					768: {slidesPerView:3},
+					479: {slidesPerView:2},
+					220: {slidesPerView:2}
+				}
+			
+			});
 		}
 
 
