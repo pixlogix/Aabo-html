@@ -172,6 +172,16 @@
 		}
 
 
+		/* Director-Swiper*/
+
+		var swiper = new Swiper(".directorSwiper", {
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev",
+			},
+		  });
+
+
 		
 		
 /*--------------------------------------------------------------------------------------------------------------------------------------*/		
