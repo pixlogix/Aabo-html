@@ -458,7 +458,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .list-block ul.custom-arrow-list { margin:0; padding:0; }
 
 
-/* =Homepage CSS 
+/* =default page CSS 
 ========================================================================================*/
 /* default banner section start */
 .banner-section {
@@ -519,7 +519,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	transform: rotate(-90deg);
 	z-index: 1111;
 	border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .login-portal a {
@@ -530,3 +530,79 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	text-align: center;
 }
 .login-portal a:hover {text-decoration: none; }
+
+/* =Homepage CSS 
+========================================================================================*/
+/* home banner section */
+.home-banner-section {
+	position: relative;
+	z-index: 1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 170px 0;
+}
+.home-banner-section:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.96);
+	z-index: -1;
+}
+.home-banner-section:before {
+	content: "";
+	background-image: url('../images/banner-shape.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 902px;
+	height: 894px;
+	
+}
+.home-banner-row {
+	position: relative;
+	width: 100%;
+
+}
+
+.home-banner-row:before {
+	content: '';
+	background-color: #9ac6ee;
+	width: calc(100% - 460px);
+	height: 100%;
+	position: absolute;
+	left: 50px;
+	top: 0;
+}
+
+.home-banner-info {
+	position: relative;
+	z-index: 1;
+	/* background-color: #9ac6ee; */
+	border-radius: 10px;
+	/* padding: 110px 20px 130px 120px; */
+	padding: 90px 20px 90px 0;
+}
+.banner-img {
+	position: absolute;
+	top: -50px;
+    right: -160px;
+}
+.banner-content h1, .banner-content h2 {
+	font-size: 80px;
+	margin-bottom: 0;
+}
+.banner-top-image {
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.banner-content {
+	max-width: 600px;
+}
