@@ -990,3 +990,6 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .news.banner-section { background-position: center center; }
 
 .news-section { padding: 150px 0; }
+.news-titles { border-radius: 10px; margin-bottom: 50px; box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.2); }
+.news-titles img { border-radius: 10px; overflow: hidden; }
+.news-titles figure { overflow: hidden; }
