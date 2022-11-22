@@ -204,7 +204,42 @@
 			},
 		  });
 
+		/* News Swiper Slider */
 
+		var swiper = new Swiper(".newsSwiper", {
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev",
+			},
+		  });
+
+		//   initiate_slider(0,".directorSwiper");
+		//   initiate_slider(1,".newsSwiper");
+
+		//   var swiper = [];
+		//   function initiate_slider(index, identifier){
+		// 	swiper[index]= new Swiper(identifier, {
+		// 		navigation: {
+		// 		  nextEl: ".swiper-button-next",
+		// 		  prevEl: ".swiper-button-prev",
+		// 		},
+		// 	  });
+		//   }
+
+		/* Newsletter-section*/
+
+		$(document).on('click',".newsletter-year h5 i", function(){
+			if($(this).hasClass('icon-down-arrow')){
+				$(this).removeClass('icon-down-arrow').addClass('icon-up-arrow');
+			}else{
+				$(this).removeClass('icon-up-arrow').addClass('icon-down-arrow');
+			}
+			$(this).closest('.newsletter-year').find('ul').slideToggle('normal');
+			return false;
+		});
+
+
+		
 		
 		
 /*--------------------------------------------------------------------------------------------------------------------------------------*/		
