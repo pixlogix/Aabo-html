@@ -161,7 +161,7 @@
                 <div class="wrap">
                     <div class="home-service-content">
                         <div class="section-title">
-                            <h2>Aabo diensten</h2>
+                            <h2>Aabo sectoren</h2>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero </p>
                         </div>
                         <div class="home-service-row aabo-sector-row">
@@ -207,16 +207,16 @@
                 <div class="wrap">
                     <div class="aabo-customer-content">
                         <span class="aabo-title-text">
-                            <h2>0</h2>
+                            <h2 class="counter">0</h2>
                         </span>
                         <span class="aabo-title-text">
-                            <h2>6</h2>
+                            <h2 class="counter">6</h2>
                         </span>
                         <span class="aabo-title-text">
-                            <h2>0</h2>
+                            <h2 class="counter">0</h2>
                         </span>
                         <span class="aabo-title-text">
-                            <h2>0</h2>
+                            <h2 class="counter">0</h2>
                         </span>
                     </div>
                     <div class="aabo-customer-heading">
@@ -283,7 +283,7 @@
             </div>
             <!-- aabo customer section end -->
             <!-- home news section start -->
-            <div class="home-news-section">
+            <div class="home-news-section" style="background-image: url('images/news-bg.jpg');">
                 <div class="wrap">
                     <div class="home-news-title">
                         <h2>Aabo nieuws</h2>
@@ -297,9 +297,11 @@
                                             <img src="images/news-1.jpg" alt="news">
                                         </a>
                                     </figure>
-                                    <h5>Titel nieuws</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. Lorem ipsum dolor sit amet,</p>
-                                    <a href="#" class="button btn-outline">Lees meer</a>
+                                    <div class="home-news-info">
+                                        <h5><a href="#">Titel nieuws</a></h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. Lorem ipsum dolor sit amet,</p>
+                                        <a href="#" class="button btn-outline">Lees meer</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -309,9 +311,11 @@
                                             <img src="images/news-1.jpg" alt="news">
                                         </a>
                                     </figure>
-                                    <h5>Titel nieuws</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. Lorem ipsum dolor sit amet,</p>
-                                    <a href="#" class="button btn-outline">Lees meer</a>
+                                    <div class="home-news-info">
+                                        <h5><a href="#">Titel nieuws</a></h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. Lorem ipsum dolor sit amet,</p>
+                                        <a href="#" class="button btn-outline">Lees meer</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -321,9 +325,11 @@
                                             <img src="images/news-1.jpg" alt="news">
                                         </a>
                                     </figure>
-                                    <h5>Titel nieuws</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. Lorem ipsum dolor sit amet,</p>
-                                    <a href="#" class="button btn-outline">Lees meer</a>
+                                    <div class="home-news-info">
+                                        <h5><a href="#">Titel nieuws</a></h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. Lorem ipsum dolor sit amet,</p>
+                                        <a href="#" class="button btn-outline">Lees meer</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -331,6 +337,26 @@
                 </div>
             </div>
             <!-- home news section end -->
+            <!-- home-our-expert-section start -->
+            <div class="home-our-expert-section">
+                <div class="wrap">
+                    <div class="home-our-expert-row">
+                        <div class="home-our-expert-info">
+                            <div class="home-our-expert-img">
+                                <figure>
+                                    <img src="images/banner-man.png" alt="Man">
+                                </figure>
+                            </div>
+                            <div class="home-our-expert-content">
+                                <h3>Hulp of advies nodig? Vraag het onze experts!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
+                                <a href="#" class="button">Neem contact op</a>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- home our expert section end -->
         </div><!--/#content-->
       </div><!--/#primary--> 
 	  </div><!--/#main -->
@@ -339,24 +365,38 @@
         <div class="footer-top">
             <div class="wrap-small">
                 <div class="footer-info">
-                    <div class="cols cols3">
+                    <div class="cols cols4">
                         <div class="col">
                             <div class="footer-title">
-                                <h3>Adres</h3>
+                                <h3>Aabo BV</h3>
                             </div>    
                             <ul class="web-address">
                                 <li><a href="https://goo.gl/maps/MsUh9x2Xmg4aYrRy7">
-                                    <address>Aabo bv <br>karel doormanstraat 2 <br>7461 er rijssen</address>
+                                    <address>karel doormanstraat 2 <br>7461 er rijssen</address>
                                 </a></li>
+                                <li>Tel. <a href="tel:0548538500">0548 - 538500</a></li>
+                                <li><a href="mailto:info@aabo-rijssen.nl">info@aabo-rijssen.nl</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="footer-title">
+                                <h3>Openingstijden</h3>
+                            </div>
+                            <ul class="footer-timing">
+                                <li>Maandag t/m vrijdag zijn wij geopen van 08.3 tot 16.30 uur.</li>
                             </ul>
                         </div>    
                         <div class="col">
                             <div class="footer-title">
-                                <h3>Contact</h3>
+                                <h3>Menu</h3>
                             </div>
                             <ul class="footer-menu">
-                                <li>Tel. <a href="tel:0548538500">0548 - 538500</a></li>
-                                <li><a href="mailto:info@aabo-rijssen.nl">info@aabo-rijssen.nl</a></li>
+                                <li><a href="#" title="Diensten">Diensten</a></li>
+                                <li><a href="#" title="Nieuws">Nieuws</a></li>
+                                <li><a href="#" title="Sectoren">Sectoren</a></li>
+                                <li><a href="#" title="Werken bij">Werken bij</a></li>
+                                <li><a href="#" title="Contact">Contact</a></li>
+                                <li><a href="#" title="Over ons">Over ons</a></li>
                             </ul>
                         </div>
                         <div class="col">
@@ -380,6 +420,8 @@
 </div><!--/#wrapper-->
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
+<script src="js/vendor/jquery.waypoints.min.js"></script>
+<script src="js/vendor/counterup2.js"></script>
 <script src="js/general.js"></script>
 </body>
 </html>
