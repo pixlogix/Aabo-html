@@ -188,7 +188,8 @@
 					// 1023: {slidesPerView: 6},
 					768: {slidesPerView:3},
 					479: {slidesPerView:2},
-					220: {slidesPerView:2}
+					375: { slidesPerView:1},
+					220: {slidesPerView:1}
 				}
 			
 			});

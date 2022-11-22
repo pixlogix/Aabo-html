@@ -175,6 +175,10 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 	transition: all 0.3s linear;
 	letter-spacing: 0.05em;
 }
+.header-top-info li a:hover {
+	color: #000;
+	text-decoration: none;
+}
 .header-top-info li i {
 	position: absolute;
 	top: 50%;
@@ -570,6 +574,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 164px 0;
+	overflow: hidden;
 }
 .home-banner-section:after {
 	content: "";
@@ -629,6 +634,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	position: absolute;
 	left: 0;
 	top: 48px;
+	max-width: 185px;
 }
 .banner-content {
 	max-width: 600px;
