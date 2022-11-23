@@ -1997,9 +1997,135 @@ h4 { font-size: 20px;}
 
 
 
+/* Neel Responsive Css*/
+
+
+/* News Pages Responsive CSS*/
+
+@media only screen and (max-width: 1200px) {
+	.news-section { padding: 120px 0;}
+	.news-titles { margin-bottom: 40px; }
+	.newsSwiper .swiper-button-next:after, .newsSwiper .swiper-button-prev:after { font-size: 25px; }
+	.newsSwiper .swiper-button-next, .newsSwiper .swiper-button-prev { padding: 20px 22px;}
+	.swiper.newsSwiper { padding: 0 0 40px; }
+	.newsletter-header h2 { font-size: 60px; }
+	.newsletter-year h5 { font-size: 22px;}
+
+	.newsletter-section { padding: 120px 0; }
+	.newsletter-year li { font-size: 21px; }
+	.newsletter-year .button { margin-left: 15px; }
+}
+
+@media only screen and (max-width: 1023px) { 
+	.news-section { padding: 100px 0;}
+	.newsSwiper .swiper-button-next { right: 40%; }
+	.newsSwiper .swiper-button-prev { left: 40%; }
+	.newsletter-header h2 { font-size: 48px; }
+	.newsletter-year h5 { font-size: 19px;}
+	.newsletter-year i { font-size: 18px; }
+	.newsletter-year { padding: 8px; } 
+	.newsletter-year .button { margin-left: 0; }
+	.newsletter-section { padding: 100px 0; }
+}
+
+@media only screen and (max-width: 767px) {
+	.news-section { padding: 80px 0;} 
+	.newsSwiper .col { width: 50%; }
+	.newsletter-header h2 { font-size: 40px; }
+	.newsletter-section { padding: 80px 0; height: auto; }
+	.newsletter-row .cols3 .col { width: 50%; margin-bottom: 20px; height: initial; }
+}
+
+@media only screen and (max-width: 567px) {
+	.newsletter-year h5 { font-size: 16px; }
+	.newsletter-year li { font-size: 18px; }
+	.newsSwiper .swiper-button-next:after, .newsSwiper .swiper-button-prev:after { font-size: 22px; }
+	.newsSwiper .swiper-button-next, .newsSwiper .swiper-button-prev { padding: 15px 19px; }
+	.news-content { padding: 15px; }
+	.newsletter-section { padding: 50px 0;}
+	.news-section { padding: 50px 0;} 
+}
+
+
+@media only screen and (max-width: 479px) {
+	.newsSwiper .col { width: 100%; }
+	.newsletter-row .cols3 .col { width: 100%;}
+	.newsletter-year .button { margin-left: 15px;}
+	.newsletter-year { max-width: 300px; }
+	.newsSwiper .swiper-button-next { right: 30%; }
+	.newsSwiper .swiper-button-prev { left: 30%; }
+}
+
+/* News Pages Responsive CSS Complete*/
 
 
 
+/*Title News Page Responsive CSS */
+
+@media only screen and (max-width: 1600px) { 
+	.default-company-info-section.title-news { padding: 200px 0;}
+}
+
+@media only screen and (max-width: 1400px) { 
+	.default-company-info-section.title-news { padding: 170px 0;}
+	.title-news-section { padding: 110px 0 140px; }
+}
+
+@media only screen and (max-width: 1200px) {
+	.default-company-info-section.title-news { padding: 140px 0;}
+	.title-news-section { padding: 100px 0 120px; }
+}
+
+@media only screen and (max-width: 1023px) {
+	.default-company-info-section.title-news { padding: 110px 0;}
+	.title-news-section { padding: 80px 0; width: 90%; }
+	.title-news-content h4 { margin-bottom: 20px; }
+	.title-news-content p { margin-bottom: 35px; }
+	.title-news-content { font-size: 19px; }
+	.title-news-content p:last-child { margin-bottom: 50px; }
+}
+
+@media only screen and (max-width: 767px) {
+	.default-company-info-section.title-news { padding: 70px 0;}
+	.title-news-section { padding: 70px 0; }
+	.title-news-content { font-size: 18px; }
+	.title-news-content h4 { margin-bottom: 15px; }
+	.title-news-content p { margin-bottom: 20px; }
+	.title-news-content p:last-child { margin-bottom: 40px; }
+}
+
+@media only screen and (max-width: 567px) {
+	.title-news-content { font-size: 17px; }
+	.title-news-section { padding: 60px 0; }
+}
+
+@media only screen and (max-width: 479px) {
+	.default-company-info-section.title-news { padding: 50px 0; }
+	.title-news-section { padding: 50px 0; }
+	.title-news-content { font-size: 16px; }
+	.title-news-content p { margin-bottom: 15px; }
+	.title-news-content p:last-child { margin-bottom: 30px; }
+}
+
+
+/*Title News Page Responsive CSS Complete */
+
+
+/* Sector page responsive CSS */
+
+
+@media only screen and (max-width: 1200px) {
+	.sector-details { padding: 25px; }
+	.sector-details h5 { font-size: 24px; }
+}
+
+@media only screen and (max-width: 1023px) {
+	.sector-row .col { width: 33.3333333%; }
+}
+
+@media only screen and (max-width: 767px) {
+	.sector-details h5 { font-size: 22px; }
+}
 
 
 

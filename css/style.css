@@ -2284,6 +2284,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 /* History Section*/
 
 .history-section { padding: 100px 0; }
+.history-section .wrap { max-width: 1540px; }
 .history-row { padding: 100px 0; }
 .timelineSwiper { padding: 70px 0;}
 .timeline-year { margin-bottom: 50px; }
@@ -2355,6 +2356,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 
 
 
+
 /* News Section-------------------------------------------------------------------------*/
 
 /* News Banner Section*/
@@ -2364,7 +2366,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 /*news-section*/
 
 .news-section { padding: 150px 0; }
-.news-titles { border-radius: 20px; margin-bottom: 45px; box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.1); background-color: #f2f2f3; overflow: hidden; }
+.news-titles { border-radius: 20px; margin-bottom: 45px; box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.1); background-color: #f2f2f3; overflow: hidden; max-width: 375px; }
 .news-titles img { border-radius: 12px; overflow: hidden; }
 .news-titles figure { overflow: hidden; }
 .news-content { padding: 16px 34px 28px 28px;  }
@@ -2413,6 +2415,24 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .title-news-content p { margin-bottom: 40px; max-width: 1050px; }
 .title-news-content p:last-child { margin-bottom: 60px; }
 
+
+/* Newsletter page Complete*/
+
+/* Sector Page Starts */
+
+.sector-section { padding: 100px 0 520px; background-color: #f2f2f3; }
+
+.sector-details { text-align: center; color: #2f56a4; border: 1px solid #ac779f; padding: 25px 30px 20px 33px; border-radius: 10px; margin-bottom: 43px; background-color: #ffffff; }
+.sector-details i { font-size: 75px; color: #dc7986; margin: 0 0 20px 0; display: inline-block; }
+.sector-details h5 { font-size: 28px; font-weight: 400; line-height: 1.2; margin-bottom: 15px; }
+.sector-details p { font-size: 15px; color: #2f56a4; line-height: 1.2; }
+.sector-details .button.btn-outline { font-size: 17px; padding: 3px 18px; border-radius: 3px; }
+
+.home-our-expert-section.sector { margin-top: -229px; }
+.default-company-info-section.sector { background: #ffffff; }
+
+
+/* Sector Page Complete*/
 
 
 
