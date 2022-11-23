@@ -167,15 +167,15 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 .header-top-info li:last-child {
 	margin-right: 0;
 }
-.header-top-info li a {
+.header-top-info li {
 	font-size: 12px;
 	line-height: 1.18;
 	font-weight: 600;
-	margin-left: 28px;
 	transition: all 0.3s linear;
 	letter-spacing: 0.05em;
+	padding-left: 28px;
 }
-.header-top-info li a:hover {
+.header-top-info li:hover a {
 	color: #000;
 	text-decoration: none;
 }
@@ -187,8 +187,8 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 	font-size: 14px;
 	line-height: 1;
 	display: block;
-	margin-top: 2px;
 }
+
 .header-social-icon li {
 	margin-right: 52px;
 }
@@ -223,7 +223,8 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 #header.sticky .header-bottom {
 	padding: 16px 0;
 }
-
+#header.sticky {transform: translateY(-44px);}
+/* footer section */
 #footer {font-size:25px; }
 /* footer-top */
 .web-address, .footer-menu, .footer-icon, .footer-timing {
@@ -402,7 +403,7 @@ input[type="checkbox"], input[type="radio"] { margin:4px 8px 0 ; vertical-align:
 .button.btn-outline:hover, input[type="submit"].btn-outline:hover, input[type="button"].btn-outline:hover, button.btn-outline:hover { background:#ab779f; color:#fff; }
 
 .button.btn-lg.btn-outline, input[type="submit"].btn-lg.btn-outline, input[type="button"].btn-lg.btn-outline {  padding:14px 35px;   }
-.button.btn-outline, input[type="submit"].btn-outline, input[type="button"].btn-outline {  padding:5px 20px;   }
+.button.btn-outline, input[type="submit"].btn-outline, input[type="button"].btn-outline {  padding:6px 20px;   }
 .button.btn-sm.btn-outline, input[type="submit"].btn-sm.btn-outline, input[type="button"].btn-sm.btn-outline {  padding:8px 25px;   }
 .button.btn-xs.btn-outline, input[type="submit"].btn-xs.btn-outline, input[type="button"].btn-xs.btn-outline {  padding:6px 20px;   }
 
@@ -535,22 +536,24 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	position: fixed;
 	right: -90px;
 	top: 32%;
-	background: #ab779f;
-	padding: 22px 21px;
 	transform: rotate(-90deg);
 	z-index: 1111;
-	border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+
 }
 
-.login-portal a {
+.login-portal .button {
 	font-size: 30px;
 	color: #fff;
 	line-height: 1.2;
 	font-weight: 600;
-	text-align: center;
+	padding: 21px;
+	background: #ab779f;
+	border-radius: 0;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
 }
-.login-portal a:hover {text-decoration: none; }
+.login-portal .button:hover {text-decoration: none;background:#37569f; }
 
 /* =Homepage CSS 
 ========================================================================================*/
@@ -788,7 +791,9 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 }
 
 .aabo-title-text {
-	padding: 12px 16px;
+	padding: 12px;
+	min-width: 94px;
+	text-align: center;
 	border: 1px solid #37569f;
 	border-radius: 8px;
 	margin-right: 20px;
@@ -796,10 +801,11 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .aabo-title-text:last-child {
 	margin-right: 0;
 }
-.aabo-title-text h2 {
+.aabo-title-text span {
 	font-size: 100px;
 	line-height: 1;
-	margin-bottom: 0;
+	font-weight: 700;
+	display: block;
 }
 .aabo-customer-heading {
 	text-align: center;
@@ -876,10 +882,19 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	padding: 14px 20px 28px 24px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 
 .home-news-card {
 	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1;
+	box-shadow: 3px 3px 8px 0 rgb(0 0 0 / 10%);
 }
 
 .home-news-card figure img {
@@ -901,6 +916,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .home-news-info p {
 	line-height: 1.2;
 	color: #3d5584;
+	margin-top: auto;
 	margin-bottom: 18px;
 }
 
@@ -910,6 +926,8 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	color: #a37a9d;
 	border: 1px solid #a37a9d;
 	padding: 4px 16px;
+	margin-top: auto;
+	align-self: start;
 }
 .home-news-title {
 	margin-bottom: 100px;
@@ -925,7 +943,25 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 
 .home-news-row .cols3 .col {
 	padding: 0 22px;
+	display: flex;
 }
+
+.home-news-card figure img {
+	transition: all 0.3s linear;
+	transform: scale(1);
+}
+
+.home-news-card figure a:hover img {
+	transform: scale(1.1);
+}
+
+.home-news-card figure a {
+	display: block;
+	overflow: hidden;
+	border-radius: 20px;
+	border-bottom-left-radius: 0;
+}
+
 /* home news section end */
 /* home our expert section start */
 .home-our-expert-section {
@@ -972,6 +1008,71 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	background: #37569f;
 }
 /* home our expert section end */
+
+
+/* =service page CSS 
+========================================================================================*/
+/* banner section */
+.service-banner-section .wrap, .service-company-info-section .wrap, .service-list-section .wrap {
+    max-width: 1198px;
+}
+
+/* service company info section start */
+.service-company-info-section {
+	padding: 54px 0 88px 0;
+	background: #fff;
+}
+.default-company-info-row p {
+	line-height: 1.5;
+}
+/* service company info section end */
+
+/* service list section start */
+.service-list-section {
+	padding: 140px 0 514px 0;
+	background: #f2f2f2;
+}
+.service-list-info {
+	border: 1px solid #2d55a3;
+	border-radius: 16px;
+	padding: 60px 34px;
+	text-align: center;
+}
+.service-list-info i {
+	font-size: 122px;
+	display: block;
+	line-height: 1;
+	color: #f65100;
+	margin-bottom: 34px;
+}
+.service-list-info h4 {
+	font-size: 42px;
+	line-height: 1;
+	margin-bottom: 0;
+	color: #f65100;
+	font-weight: 300;
+}
+.service-list-info h4 a {
+	color: #f65100;
+}
+.service-list-row .cols4 {
+	margin: 0 -16px;
+}
+
+.service-list-row .cols4 .col {
+	padding: 0 16px;
+}
+/* service list section end */
+/* service our expert section start */
+.home-our-expert-section.service-our-expert-section {
+	padding-bottom: 150px;
+	margin-top: -264px;
+}
+/* service our expert section end */
+
+
+
+
 
 
 

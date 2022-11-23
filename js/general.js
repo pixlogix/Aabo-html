@@ -47,7 +47,7 @@
 		/* Menu ICon Append prepend for responsive
 		---------------------------------------------------------------------*/
 		$(window).on('resize', function(){
-			if (screencheck(767)) {
+			if (screencheck(991)) {
 				if(!$('#menu').length){
 					$('#mainmenu').prepend('<a href="#" id="menu" class="menulines-button"><span class="menulines"></span> <em>Menu</em></a>');
 				}
