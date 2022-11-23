@@ -128,7 +128,7 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 
 /* =Common-Page (common classes for all pages)
 ========================================================================================*/
-#header { position: sticky; top: 0; z-index: 111; }
+#header { position: sticky; top: 0; z-index: 111;transition: all 0.3s linear; }
 .header-row { display: flex; align-items: center; justify-content: space-between;}
 #logo { width: 185px; position: relative; transition: all 250ms cubic-bezier(0,.34,.74,.99); }
 #logo img { max-width:100%; height:auto; width:auto; }
@@ -216,6 +216,13 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 }
 
 /* Header Sticky Style */
+#header.sticky #logo {
+	width: 150px;
+}
+
+#header.sticky .header-bottom {
+	padding: 16px 0;
+}
 
 #footer {font-size:25px; }
 /* footer-top */
