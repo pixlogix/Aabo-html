@@ -2452,8 +2452,52 @@ h4 { font-size: 20px;}
 
 @media only screen and (max-width: 1300px) {
 	.map iframe { width: 650px; }
+	.contact-mode { padding: 120px 0; }
 }
 
+@media only screen and (max-width: 1150px) {
+	
+	.map iframe {
+		width: 520px; height: 900px; }
+	.info-form { padding: 100px 0;}
+}
+
+@media only screen and (max-width: 1023px) {
+	.info-form { max-width: 370px; padding: 50px 0;}
+	.map iframe { width: 370px; height: 825px; }
+	.contact-mode { padding: 100px 0; }
+	.contact-content i { font-size: 42px; margin-bottom: 40px; }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	.contact-locations .col { width: 100%; }
+	.map iframe { width: 100%; height: auto; }
+	.contact-locations .cols.cols2 { flex-direction: column-reverse; }
+	.info-form { margin-left: 20px; padding: 50px 0 30px; }
+	.contact-mode { padding: 80px 0; }
+	.contact-content i { font-size: 40px; margin-bottom: 30px; }
+	.contact-content p { margin-bottom: 10px; }
+} 
+
+@media only screen and (max-width: 567px){
+	.contact-mode { padding: 50px 0; }
+	.contact-content i { font-size: 35px; margin-bottom: 15px; }
+	.contact-mode-row .col { width: 50%; margin-bottom: 30px; }
+	.contact-content p { margin-bottom: 5px; }
+}
+
+@media only screen and (max-width: 479px) {
+	.contact-content i { margin-bottom: 15px; }
+	.contact-mode-row .col { width: 100%; }
+	input.textbox.place { width: 100%; display: block; }
+	input.textbox.postal { width: 100%; display: block; }
+	input.textbox.nearby { width: 100%; display: block; }
+	.info-form input.textbox.street { display: block; width: 100%; }
+	.address { display: block; }
+	.address .form-group:last-child { margin: 0;}
+}
 
 
 
