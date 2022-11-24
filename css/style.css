@@ -784,7 +784,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .home-service-info.aabo-sector-info {
 	border-color: #cd7e87;
 	background: linear-gradient(to left, #f8f8f8 50%, #cd7e87 50%) right;
-	background-size: 200% 100%;
+	background-size: 202% 102%;
 }
 .home-service-info.aabo-sector-info:hover {
 	background-position: left;
@@ -1088,6 +1088,54 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 }
 /* service our expert section end */
 
+/* =employ page CSS 
+========================================================================================*/
+/* dienst banner section */
+.dienst-banner-btn .button {
+	font-size: 42px;
+	font-weight: 700;
+	padding: 12px 20px;
+	background: #a37a9d;
+}
+
+.dienst-banner-btn {
+	text-align: center;
+}
+.dienst-banner-section {
+	padding: 228px 0 180px 0;
+}
+/* dienst info section */
+
+.title-news-section.dienst-info-section .wrap {
+	max-width: 1060px;
+}
+
+.title-news-section.dienst-info-section {
+	padding-bottom: 420px;
+}
+
+/* dienst our expert section */
+.dienst-our-expert-section {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+.dienst-our-expert-section:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top:0;
+	background: rgba(255,255,255,0.9);
+}
+.dienst-our-expert-row {
+	transform: translateY(-200px);
+}
 
 
 
