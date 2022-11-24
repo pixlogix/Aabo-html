@@ -2554,6 +2554,34 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 /* Sector Page Complete*/
 
 
+/* Contact Page Starts */
+
+.default-company-info-section.news { background: #ffffff }
+
+.info-form { max-width: 439px; margin: 0 auto; padding: 180px 0;}
+.info-form label { font-size: 17px; font-weight: 400; }
+.info-form h5 { font-size: 27px; }
+.contact-locations input.textbox { background: #ffffff; border: none; height: 33px; border-radius: 4px; }
+.contact-locations { background: #f2f2f2; }
+.info-form input.textbox.street { width: 294px; }
+input.textbox.nearby { width: 130px; }
+.address { display: flex; align-items: center; } 
+.address .form-group:last-child { margin-left: 15px; }
+input.textbox.postal { width: 129px; }
+input.textbox.place { width: 294px; }
+.info-form textarea { height: 185px; background: #ffffff; border: none; margin-bottom: 5px; }
+.info-form .checkbox input { width: 15px; height: 15px; }
+.info-form .checkbox .input-helper:before { border: 1px solid #2f56a4;}
+.info-form .checkbox p { font-size: 16px; margin: 0 0 12px 25px; font-weight: 400; }
+.info-form .checkbox p.terms { font-size: 11px; margin: 0 0 15px; color: #2f56a4; font-weight: 400; line-height: 1.2; }
+.info-form .checkbox { margin-right: 0; }
+.info-form input.button.btn-outline { padding: 3px 10px; }
+
+
+/*Contact-mode-section*/ 
+
+.contact-mode { padding: 140px 0; }
+
 
 
 

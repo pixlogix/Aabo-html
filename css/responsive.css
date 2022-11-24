@@ -2287,26 +2287,45 @@ h4 { font-size: 20px;}
 
 
 @media only screen and (max-width: 1200px) {
-	.sector-details { padding: 25px; }
+	.sector-details { padding: 25px; margin-bottom: 40px;}
 	.sector-details h5 { font-size: 24px; }
+	.sector-section { padding: 100px 0 400px; }
 }
 
 @media only screen and (max-width: 1023px) {
 	.sector-row .col { width: 33.3333333%; }
+	.sector-details {margin-bottom: 35px; }
+	.sector-section { padding: 100px 0 300px; }
+	.home-our-expert-section.sector { margin-top: -190px; }
+	.sector-details i { margin: 0 0 15px 0;}
 }
 
 @media only screen and (max-width: 767px) {
 	.sector-details h5 { font-size: 22px; }
+	.sector-row .col { width: 50%; }
+	.sector-details h5 { font-size: 20px; }
+	.sector-row .col:last-child .sector-details { margin-bottom: 0; }
+	.sector-row .col:nth-last-child(2) .sector-details { margin-bottom: 0; }
+	.sector-details { padding: 15px; }
+	.sector-section { padding: 80px 0 300px; }
 }
 
 
+@media only screen and (max-width: 567px) {
+	.sector-section { padding: 50px 0 300px; }
+}
 
 
+@media only screen and (max-width: 479px) {
+	.sector-details { padding: 15px; margin-bottom: 25px; }
+	.sector-details i { margin: 0 0 10px 0;}
+	.sector-row .col { width: 100%; }
+	.sector-row .col:nth-last-child(2) .sector-details { margin-bottom: 25px; }
+	.sector-section { padding: 50px 0 250px; }
+} 
 
 
-
-
-
+/* Sector page responsive completed*/
 
 
 
