@@ -257,8 +257,11 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 .web-address li a:hover, .footer-menu li a:hover {
 	text-decoration: none;
 }
-.footer-menu li a:hover {
+.footer-menu li a:hover, .web-address li a:hover {
 	color: #ab779f;
+}
+.web-address li .address:hover {
+	color: #37569f;
 }
 .web-address li a address  {
 	font-style: normal;
@@ -403,7 +406,7 @@ input[type="checkbox"], input[type="radio"] { margin:4px 8px 0 ; vertical-align:
 .button.btn-outline:hover, input[type="submit"].btn-outline:hover, input[type="button"].btn-outline:hover, button.btn-outline:hover { background:#ab779f; color:#fff; }
 
 .button.btn-lg.btn-outline, input[type="submit"].btn-lg.btn-outline, input[type="button"].btn-lg.btn-outline {  padding:14px 35px;   }
-.button.btn-outline, input[type="submit"].btn-outline, input[type="button"].btn-outline {  padding:6px 20px;   }
+.button.btn-outline, input[type="submit"].btn-outline, input[type="button"].btn-outline {  padding:4px 20px;   }
 .button.btn-sm.btn-outline, input[type="submit"].btn-sm.btn-outline, input[type="button"].btn-sm.btn-outline {  padding:8px 25px;   }
 .button.btn-xs.btn-outline, input[type="submit"].btn-xs.btn-outline, input[type="button"].btn-xs.btn-outline {  padding:6px 20px;   }
 
@@ -654,6 +657,8 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .home-service-section {
 	padding: 74px 0 144px 0;
 	background: #f2f2f2;
+	z-index: 1;
+	position: relative;
 }
 
 .home-service-info i {
@@ -667,6 +672,12 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	border: 1px solid #37569f;
 	border-radius: 16px;
 	padding: 40px 34px;
+	text-align: center;
+	display: block;
+	transition: all 0.3s linear;
+	background: linear-gradient(to bottom, #37569f 50%, transparent 50%);
+	background-size: 100% 200%;
+	background-position: bottom;
 }
 .home-service-content {
 	max-width: 1010px;
@@ -683,45 +694,38 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	padding: 0 34px;
 }
 .home-service-info h4 {
+	font-size: 30px;
+	line-height: 1;
 	margin-bottom: 0;
 	color: #cd7e87;
 	font-weight: 300;
 }
 
-.home-service-info h4 a {
-	color: #cd7e87;
-	transition: all 0.3s linear;
-}
-.home-service-info h4 a:hover {
-	color: #37569f;
+.home-service-info:hover {
+	background-position: top;
 	text-decoration: none;
 }
+.home-service-info:hover h4, .home-service-info:hover i { color: #fff;}
 /* home service section end */
 
 /* above aabo section start*/
+.above-aabo-section {
+	margin-top: -50px;
+	position: relative;
+	padding-top: 50px;
+}
+.above-aabo-section .wrap {
+	 max-width: 1530px;
+	}
 .above-aabo-info {
 	position: relative;
 	text-align: center;
-	padding: 40px 110px 110px 0;
+	padding: 110px 100px 110px 0px;
 	
 }
 
-.above-aabo-info:before {
-	content: "";
-	background-image: url('../images/above-aabo-bg.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 806px;
-	height: 685px;
-	position: absolute;
-	top: -75px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: -1;
-}
 .above-aabo-info p {
-	max-width: 490px;
+	max-width: 450px;
 	font-size: 18px;
 	line-height: 1.6;
 	text-align: justify;
@@ -736,17 +740,23 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	align-items: flex-end;
 	margin: 0;
 }
-.above-aabo-row > .cols2 > .col { 
+
+.above-aabo-row > .cols2 > .col:first-child { 
 	padding: 0;
-	width: 52%;
-	padding-right: 70px;
+	width: 55%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: -60px;
+	margin-top: -50px;
 }
 .above-aabo-row > .cols2 > .col:last-child { 
 	padding: 0;
-	width: 48%;
+	width: 45%;
 }
 .above-aabo-img figure img {
     border-radius: 20px;
+		width: 100%;
 }
 /* above aabo section end*/
 
@@ -773,8 +783,16 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 }
 .home-service-info.aabo-sector-info {
 	border-color: #cd7e87;
-	background: #f8f8f8;
+	background: linear-gradient(to left, #f8f8f8 50%, #cd7e87 50%) right;
+	background-size: 200% 100%;
 }
+.home-service-info.aabo-sector-info:hover {
+	background-position: left;
+}
+.home-service-info.aabo-sector-info:hover h4, .home-service-info.aabo-sector-info:hover i {
+	 color: #fff;
+	}
+
 /* aabo sector section end */
 
 /*aabo customer section start */
