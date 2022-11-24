@@ -2563,6 +2563,14 @@ input.textbox.place { width: 294px; }
 /*Contact-mode-section*/ 
 
 .contact-mode { padding: 140px 0; }
+.contact-content { text-align: center; }
+.contact-content p { font-size: 23px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
+.contact-content a { font-size: 21px; font-weight: 400; line-height: 1.2; }
+.contact-content span { display: block; }
+
+
+.home-our-expert-section.contact { margin-top: 0; padding: 175px 0 110px; }
+.contact .home-our-expert-img { top: 0; max-width: 463px; }
 
 
 
