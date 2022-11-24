@@ -2528,10 +2528,11 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .default-company-info-section.title-news { background: none; padding: 232px 0; background-repeat: no-repeat; background-size: cover; background-position: center; }
 
 .title-news-section { padding: 120px 0 160px; }
+.title-news-section .wrap { max-width: 1060px; }
 .title-news-content h4 { color: #ac779f; font-size: 34px; margin-bottom: 25px; font-weight: 600; }
 .title-news-content:last-child p:last-child { margin-bottom: 0; }
 .title-news-content { color: #2f56a4; font-size: 20px; line-height: 1.2; }
-.title-news-content p { margin-bottom: 40px; max-width: 1050px; }
+.title-news-content p { margin-bottom: 40px; }
 .title-news-content p:last-child { margin-bottom: 60px; }
 
 
@@ -2562,7 +2563,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .info-form label { font-size: 17px; font-weight: 400; }
 .info-form h5 { font-size: 27px; }
 .contact-locations input.textbox { background: #ffffff; border: none; height: 33px; border-radius: 4px; }
-.contact-locations { background: #f2f2f2; }
+.contact-locations { background: #f2f2f2; overflow: hidden; }
 .info-form input.textbox.street { width: 294px; }
 input.textbox.nearby { width: 130px; }
 .address { display: flex; align-items: center; } 
@@ -2581,6 +2582,20 @@ input.textbox.place { width: 294px; }
 /*Contact-mode-section*/ 
 
 .contact-mode { padding: 140px 0; }
+.contact-content { text-align: center; }
+.contact-content p { font-size: 23px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
+.contact-content a { font-size: 21px; font-weight: 400; line-height: 1.2; }
+.contact-content span { display: block; }
+.contact-content i { font-size: 46px; margin-bottom: 46px; display: block; }
+
+
+.home-our-expert-section.contact { margin-top: 0; padding: 175px 0 110px; background-position: top; background-repeat: no-repeat; background-size: cover; z-index: 1; position: relative; }
+.home-our-expert-section.contact:before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); z-index: -1; }
+
+
+
+/* Contact Page Complete */
+
 
 
 
