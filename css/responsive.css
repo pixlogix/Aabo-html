@@ -59,8 +59,6 @@ h1,h2 { font-size: 62px;}
 	height: 844px;
 }
 
-
-
 }
 
 /*==========================================================================================================*/
@@ -70,8 +68,6 @@ h1,h2 { font-size: 62px;}
 	padding: 18px;
 	font-size: 28px;
 }
-
-
 
 /* banner section */
 
@@ -107,7 +103,6 @@ h1,h2 { font-size: 62px;}
 }
 
 
-
 }
 
 /*==========================================================================================================*/
@@ -124,7 +119,6 @@ h1,h2 { font-size: 62px;}
 .above-aabo-row > .cols2 > .col:last-child {
     width: 43%;
 }
-
 
 }
 
@@ -147,7 +141,6 @@ h1,h2 { font-size: 62px;}
     max-width: 570px;
     right: -200px;
 }
-
 
 }
 
@@ -194,14 +187,7 @@ h1,h2 { font-size: 62px;}
 }
 
 
-
-
-
 }
-
-
-
-
 
 
 /*==========================================================================================================*/
@@ -484,6 +470,19 @@ h4 {font-size: 30px;}
 	border-top-width: 5px;
 }
 
+/* services page responsive 
+====================================================*/
+/* service list section */
+.service-list-section {
+	padding: 120px 0 430px 0;
+}
+.home-our-expert-section.service-our-expert-section {
+	padding-bottom: 144px;
+}
+
+
+
+
 
 }
 
@@ -506,7 +505,7 @@ h4 {font-size: 30px;}
 
 /* default banner section */
 .banner-row h1, .banner-row h2 {
-	font-size: 90px;
+	font-size: 86px;
 }
 
 .default-company-info-section {
@@ -690,7 +689,7 @@ h4 {font-size: 30px;}
 	max-width: 100%;
 	width: 40%;
 }
-.home-our-expert-section {
+.home-our-expert-section, .home-our-expert-section.service-our-expert-section {
 	padding-bottom: 124px;
 }
 /* footer section */
@@ -729,6 +728,32 @@ h4 {font-size: 30px;}
 .footer-title h3 {
 	margin-bottom: 12px;
 }
+
+/* services page responsive 
+====================================================*/
+/* service list section */
+.service-list-section {
+	padding: 100px 0 350px 0;
+}
+
+.service-list-row .cols4 .col {
+	padding: 0 10px;
+}
+
+.service-list-row .cols4 {margin: 0 -10px;}
+
+.service-list-info i {
+	font-size: 90px;
+}
+
+.service-list-info.home-service-info {
+	padding: 50px 16px;
+}
+
+
+
+
+
 
 } 
 
@@ -807,7 +832,9 @@ h3 { font-size: 32px;}
 	margin-bottom: 20px;
 	font-size: 18px;
 }
-
+.default-company-info-section.service-company-info-section {
+	padding-top: 50px;
+}
 /* header sticky */
 #header.sticky #logo {
 	width: 110px;
@@ -922,7 +949,7 @@ h3 { font-size: 32px;}
 	width: 50%;
 }
 
-.home-our-expert-section {
+.home-our-expert-section, .home-our-expert-section.service-our-expert-section {
 	padding-bottom: 100px;
 }
 .home-our-expert-content .button {
@@ -956,6 +983,25 @@ h3 { font-size: 32px;}
 .footer-info > .cols4 > .col:nth-child(3) {
 	width: 27%;
 }
+
+/* services page responsive 
+====================================================*/
+/* service list section */
+.service-list-section {
+	padding: 70px 0 330px 0;
+}
+
+.service-list-row .cols4 .col {
+	width: 33.33%;
+	padding-bottom: 30px;
+}
+
+.service-list-row .cols4 {
+	margin-bottom: -30px;
+}
+
+
+
 
 
 }
@@ -1057,7 +1103,7 @@ h3 { font-size: 30px;}
 .home-news-section {
 	padding-bottom: 200px;
 }
-.home-our-expert-section {
+.home-our-expert-section, .home-our-expert-section.service-our-expert-section {
 	padding-bottom: 40px;
 }
 .home-our-expert-info {
@@ -1114,6 +1160,20 @@ h3 { font-size: 30px;}
 	padding: 60px 0;
 }
 
+
+/* services page responsive 
+====================================================*/
+.default-company-info-section.service-company-info-section {
+	padding: 40px 0;
+}
+/* service list section */
+.service-list-section {
+	padding: 50px 0 300px 0;
+}
+
+.service-list-info.home-service-info {
+	padding: 34px 16px;
+}
 
 
 }
@@ -1258,7 +1318,7 @@ h4 { font-size: 20px;}
 	padding: 30px 20px;
 	padding-bottom: 0;
 }
-.home-our-expert-section {
+.home-our-expert-section, .home-our-expert-section.service-our-expert-section {
 	padding-bottom: 30px;
 }
 	/* footer section */
@@ -1311,6 +1371,23 @@ h4 { font-size: 20px;}
 	margin-right: 14px;
 }
 
+/* services page responsive 
+====================================================*/
+.service-list-row .cols4 .col {
+	width: 50%;
+	padding-bottom: 20px;
+}
+
+.service-list-row .cols4 {
+	margin-bottom: -20px;
+}
+.default-company-info-section.service-company-info-section {
+	padding: 30px 0;
+}
+
+.service-list-section {
+	padding-top: 40px;
+}
 		
 } 
 

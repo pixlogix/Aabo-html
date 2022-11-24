@@ -1055,6 +1055,8 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	border-radius: 16px;
 	padding: 60px 34px;
 	text-align: center;
+	transition: all 0.3s linear;
+	display: block;
 }
 .service-list-info i {
 	font-size: 122px;
