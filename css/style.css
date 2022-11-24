@@ -1072,9 +1072,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	color: #f65100;
 	font-weight: 300;
 }
-.service-list-info h4 a {
-	color: #f65100;
-}
+
 .service-list-row .cols4 {
 	margin: 0 -16px;
 }
@@ -2564,7 +2562,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .info-form label { font-size: 17px; font-weight: 400; }
 .info-form h5 { font-size: 27px; }
 .contact-locations input.textbox { background: #ffffff; border: none; height: 33px; border-radius: 4px; }
-.contact-locations { background: #f2f2f2; overflow: hidden; }
+.contact-locations { background: #f2f2f2; }
 .info-form input.textbox.street { width: 294px; }
 input.textbox.nearby { width: 130px; }
 .address { display: flex; align-items: center; } 
@@ -2578,25 +2576,12 @@ input.textbox.place { width: 294px; }
 .info-form .checkbox p.terms { font-size: 11px; margin: 0 0 15px; color: #2f56a4; font-weight: 400; line-height: 1.2; }
 .info-form .checkbox { margin-right: 0; }
 .info-form input.button.btn-outline { padding: 3px 10px; }
-.info-form span { color: #ac779f; }
 
 
 /*Contact-mode-section*/ 
 
 .contact-mode { padding: 140px 0; }
-.contact-content { text-align: center; }
-.contact-content p { font-size: 23px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
-.contact-content a { font-size: 21px; font-weight: 400; line-height: 1.2; }
-.contact-content span { display: block; }
-.contact-content i { font-size: 46px; margin-bottom: 46px; display: block; }
 
-
-.home-our-expert-section.contact { margin-top: 0; padding: 175px 0 110px; background-position: top; background-repeat: no-repeat; background-size: cover; z-index: 1; position: relative; }
-.home-our-expert-section.contact:before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); z-index: -1; }
-
-
-
-/* Contact-page complete */
 
 
 
