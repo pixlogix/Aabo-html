@@ -47,12 +47,12 @@
                     </a>
                     <nav id="mainmenu">
                         <ul>
-                            <li><a href="#" title="Diensten">Diensten</a></li>
-                            <li><a href="#" title="Nieuws">Nieuws</a></li>
-                            <li><a href="#" title="Sectoren">Sectoren</a></li>
-                            <li><a href="#" title="Werken bij">Werken bij</a></li>
-                            <li><a href="#" title="Contact">Contact</a></li>
-                            <li><a href="#" title="Over ons">Over ons</a></li>
+                            <li><a href="#" title="Diensten" target="_blank">Diensten</a></li>
+                            <li><a href="#" title="Nieuws" target="_blank">Nieuws</a></li>
+                            <li><a href="#" title="Sectoren" target="_blank">Sectoren</a></li>
+                            <li><a href="#" title="Werken bij" target="_blank">Werken bij</a></li>
+                            <li><a href="#" title="Contact" target="_blank">Contact</a></li>
+                            <li><a href="#" title="Over ons" target="_blank">Over ons</a></li>
                         </ul>
                     </nav><!--/#mainmenu-->
                 </div>
@@ -61,7 +61,7 @@
 	</header>
     <!-- header section end -->
     <!-- default banner section start -->
-    <div class="banner-section" style="background-image: url('images/');">
+    <div class="banner-section" style="background-image: url('images/headquarter.jpg');">
       <div class="wrap">
           <div class="banner-row">
               <h1>Dienst</h1>
@@ -70,13 +70,16 @@
   </div>
   <!-- default banner section end -->
   <!-- default company-info section start -->
-  <div class="default-company-info-section title-news" style="background-image: url('images/news-2.png');">
+  <div class="dienst-banner-section" style="background-image: url('images/dienst-image.jpg');">
+    <div class="dienst-banner-btn">
+      <a href="#" class="poptrigger button" data-rel="popupname">Vraag offertte aan</a>
+    </div>
   </div>
   <!-- default company-info section start -->
     <div id="main">
       <div id="primary" class="content-area one-column">
         <div id="content" class="site-content">
-            <div class="title-news-section">
+            <div class="title-news-section dienst-info-section">
               <div class="wrap">
                   <div class="title-news-content">
                       <h4>Tussenkopje</h4>
@@ -97,9 +100,10 @@
                   </div>
               </div>
           </div>
-            <div class="home-our-expert-section service-our-expert-section">
+          <!-- employ our expert section start -->
+            <div class="dienst-our-expert-section" style="background-image: url('images/our-expert-bg.jpg');">
               <div class="wrap">
-                  <div class="home-our-expert-row">
+                  <div class="home-our-expert-row dienst-our-expert-row">
                       <div class="home-our-expert-info">
                           <div class="home-our-expert-img">
                               <figure>
@@ -115,7 +119,7 @@
                   </div>
               </div>
           </div>
-        <!-- service our expert section end -->
+        <!-- employ our expert section end -->
         </div><!--/#content-->
       </div><!--/#primary-->
 	  </div><!--/#main -->
@@ -150,12 +154,12 @@
                                 <h3>Menu</h3>
                             </div>
                             <ul class="footer-menu">
-                                <li><a href="#" title="Diensten">Diensten</a></li>
-                                <li><a href="#" title="Nieuws">Nieuws</a></li>
-                                <li><a href="#" title="Sectoren">Sectoren</a></li>
-                                <li><a href="#" title="Werken bij">Werken bij</a></li>
-                                <li><a href="#" title="Contact">Contact</a></li>
-                                <li><a href="#" title="Over ons">Over ons</a></li>
+                                <li><a href="#" title="Diensten" target="_blank">Diensten</a></li>
+                                <li><a href="#" title="Nieuws" target="_blank">Nieuws</a></li>
+                                <li><a href="#" title="Sectoren" target="_blank">Sectoren</a></li>
+                                <li><a href="#" title="Werken bij" target="_blank">Werken bij</a></li>
+                                <li><a href="#" title="Contact" target="_blank">Contact</a></li>
+                                <li><a href="#" title="Over ons" target="_blank">Over ons</a></li>
                             </ul>
                         </div>
                         <div class="col">
@@ -176,6 +180,180 @@
         </div>
     </footer>
     <!-- footer section end -->
+    <!-- Quatation pop up form -->
+    <div class="popouterbox employ-quote" id="popupname">
+        <div class="popup-block">
+            <a href="#" class="close-dialogbox"></a>
+            <div class="pop-contentbox">
+                <div class="employ-quote-form-title">
+                    <h2>Offerte aanvraag formulier</h2>
+                </div>
+                <div class="quotation-form-row">
+                    <div class="cols cols2">
+                        <div class="col">
+                            <form action="#">
+                                <div class="form-block">
+                                    <div class="form-group">
+                                        <label>Naam van de onderneming</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>T.a.v.:</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-title">
+                                            <label>Geslacht</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="default-checkbox">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span>Man</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                        <div class="checkbox">
+                                            <label for="default-checkbox">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span>Vrouw</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                    </div>
+                                    <div class="form-division">
+                                        <div class="form-group quote-street">
+                                            <label>Straat</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="form-group quote-near">
+                                            <label>Nr</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-division">
+                                        <div class="form-group quote-postcode">
+                                            <label>Postcode</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="form-group quote-plaats">
+                                            <label>Plaats</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Telefoon</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>E-mail</label>
+                                        <input type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-title">
+                                            <label>Is uw loonadministratie verdeeld over meerdere rechtsvormen?:</label>
+                                        </div>
+                                        <div class="checkbox process-checkbox">
+                                            <label for="default-checkbox">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span>Ja  (bijvoorbeeld: BV's, BV + Holding)</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                        <div class="checkbox process-checkbox">
+                                            <label for="default-checkbox">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span>Nee</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Zo ja, hoeveel?</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="#">
+                                <div class="form-block">
+                                    <div class="form-group">
+                                        <label>Aantal te verlonen medewerkers</label>
+                                        <input type="text"> 
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tijdsvak van verlonen</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option>1 month</option>
+                                                <option>2 month</option>
+                                                <option>3 month</option>
+                                                <option>4 month</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Sector</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option>Sector 1</option>
+                                                <option>Sector 2</option>
+                                                <option>Sector 3</option>
+                                                <option>Sector 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-title quote-process">
+                                            <label>Offerte voor verwerking via:<br><span>(beide opties zijn mogelijk)</span></label>
+                                        </div>
+                                        <div class="checkbox process-checkbox">
+                                            <label for="default-checkbox">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span>Full service</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                        <div class="checkbox process-checkbox">
+                                            <label for="default-checkbox">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span>Porta</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Voor vragen en/of opmerkingen over uw onderneming of onze dienstverlening</label>
+                                        <div class="field-box">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox small-checkbox">
+                                            <label for="default-checkbox newsletter-text">
+                                                <input type="checkbox" id="default-checkbox">
+                                                <em class="input-helper"></em>
+                                                <span class="quote-newsletter">Ik wil mij laten toevoegen aan jullie nieuwsbriefsysteem</span>
+                                            </label>
+                                        </div><!--/.checkbox-->
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="privacy-text">Wij hebben een <a href="#">privacy verklaring</a>. In de <a href="#">privacy verklaring</a> staat beschreven
+                                            hoe we met je persoonlijke gegevens omgaan.
+                                        </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Verzend">
+                                    </div>
+                                </div>
+                            </form>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.popup-block -->
+    </div><!--/.popouterbox -->
+    <!-- Quatation pop up form -->
 </div><!--/#wrapper-->
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
