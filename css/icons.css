@@ -24,14 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-contact-mail:before {
+.icon-close-btn:before {
   content: "\e90d";
-}
-.icon-location-pin:before {
-  content: "\e90e";
-}
-.icon-telephone:before {
-  content: "\e90f";
 }
 .icon-clock:before {
   content: "\e900";

@@ -24,6 +24,16 @@
 .banner-img {
 	right: -224px;
 }
+/* employ page responsive */
+.dienst-banner-section {
+	padding: 170px 0;
+}
+
+.title-news-section.dienst-info-section {
+	padding: 100px 0 400px 0;
+}
+
+
 
 }
 
@@ -58,6 +68,23 @@ h1,h2 { font-size: 62px;}
 	width: 868px;
 	height: 844px;
 }
+
+/* employ quotation form */
+
+.employ-quote-form-title h2 {
+	font-size: 54px;
+}
+
+.employ-quote-form-title {
+	margin-bottom: 46px;
+}
+.banner-row h1, .banner-row h2 {
+	font-size: 122px;
+}
+.dienst-banner-btn .button {
+	font-size: 38px;
+}
+
 
 }
 
@@ -506,8 +533,48 @@ h4 {font-size: 30px;}
 	padding-bottom: 144px;
 }
 
+/* employ quotation form */
+.pop-contentbox {
+	padding: 80px;
+}
 
+#popupname .popup-block {
+	max-width: 900px;
+}
 
+.employ-quote-form-title h2 {
+	font-size: 44px;
+}
+
+.employ-quote-form-title {
+	margin-bottom: 38px;
+}
+
+.quotation-form-row >.cols2 > .col:first-child {
+	padding-right: 34px;
+}
+
+.quotation-form-row >.cols2 > .col:last-child {
+	padding-left: 34px;
+}
+
+.close-dialogbox:before {
+	font-size: 22px;
+}
+.dienst-banner-section {
+	padding: 140px 0;
+}
+
+.dienst-banner-btn .button {
+	font-size: 32px;
+	padding: 10px 28px;
+}
+
+.title-news-section.dienst-info-section {
+	padding: 80px 0 252px 0;
+}
+
+.dienst-our-expert-row {transform: translateY(-130px);}
 
 
 }
@@ -787,7 +854,54 @@ h4 {font-size: 30px;}
 	padding: 50px 16px;
 }
 
+/* employ quatation form */
+#popupname .popup-block {
+	max-width: 700px;
+}
 
+.pop-contentbox {
+	padding: 54px;
+}
+
+.employ-quote-form-title h2 {
+	font-size: 36px;
+}
+
+.employ-quote-form-title {
+	margin-bottom: 30px;
+}
+
+.quotation-form-row label {
+	font-size: 16px;
+}
+
+.close-dialogbox:before {
+	font-size: 20px;
+}
+.quotation-form-row textarea {
+	height: 140px;
+}
+.dienst-banner-btn .button {
+	font-size: 30px;
+}
+
+.title-news-section.dienst-info-section {
+	padding: 54px 0 180px 0;
+}
+.dienst-our-expert-row {
+	transform: translateY(-110px);
+} 
+.title-news-content p:last-child {
+	margin-bottom: 40px;
+}
+
+.title-news-content p {
+	margin-bottom: 24px;
+}
+
+.title-news-content h4 {
+	font-size: 32px;
+}
 
 
 
@@ -1037,7 +1151,71 @@ h3 { font-size: 32px;}
 	margin-bottom: -30px;
 }
 
+/* employ quote form */
+.quotation-form-row >.cols2 > .col:first-child {
+	padding-right: 20px;
+}
 
+.quotation-form-row >.cols2 > .col:last-child {
+	padding-left: 20px;
+}
+
+.employ-quote-form-title h2 {
+	font-size: 30px;
+}
+
+.employ-quote-form-title {
+	margin-bottom: 22px;
+}
+
+.close-dialogbox:before {
+	font-size: 18px;
+}
+
+.close-dialogbox {
+	right: 36px;
+	top: 40px;
+	width: 30px;
+	height: 30px;
+}
+
+.quotation-form-row label, .quotation-form-row .form-block .form-group label {
+	font-size: 16px;
+}
+
+.quotation-form-row input[type="text"], .quotation-form-row input[type="password"], .quotation-form-row input[type="email"], .quotation-form-row input[type="tel"], .quotation-form-row input[type="search"], .quotation-form-row input[type="url"], textarea, select {
+	height: 28px;
+}
+
+.quotation-form-row textarea {
+	height: 120px;
+}
+
+.dienst-banner-btn .button {
+	font-size: 24px;
+}
+
+.title-news-section.dienst-info-section {
+	padding: 44px 0 110px 0;
+}
+
+.dienst-our-expert-row {
+	transform: translateY(-70px);
+}
+.title-news-content h4 {
+	font-size: 26px;
+}
+
+.title-news-content p {
+	font-size: 16px;
+}
+
+.title-news-content p:last-child {
+	margin-bottom: 24px;
+}
+.dienst-banner-section {
+	padding: 110px 0;
+}
 
 
 
@@ -1211,6 +1389,61 @@ h3 { font-size: 30px;}
 .service-list-info.home-service-info {
 	padding: 34px 16px;
 }
+
+/* employ quote form */
+.quotation-form-row >.cols2 > .col:first-child {
+	padding-right: 0;
+	width: 100%;
+}
+
+.quotation-form-row >.cols2 > .col:last-child {
+	width: 100%;
+	padding-left: 0;
+}
+
+.pop-contentbox {
+	padding: 40px;
+}
+
+#popupname .popup-block {
+	max-width: 430px;
+}
+
+.employ-quote-form-title h2 {
+	font-size: 28px;
+}
+
+.employ-quote-form-title {
+	margin-bottom: 18px;
+}
+.quotation-form-row label, .quotation-form-row .form-block .form-group label {
+	margin-bottom: 14px;
+}
+
+.quotation-form-row .form-group {
+	padding-bottom: 14px;
+}
+.dienst-banner-section {
+	padding: 80px 0;
+}
+
+.dienst-banner-btn .button {
+	font-size: 22px;
+	padding: 8px 22px;
+}
+.title-news-content p:last-child {
+	margin-bottom: 20px;
+}
+.title-news-section.dienst-info-section {
+	padding: 20px 0 30px 0;
+}
+.dienst-our-expert-row {
+	transform: translateY(-20px);
+}
+.title-news-content p:last-child {
+	margin-bottom: 20px !important;
+}
+
 
 
 }
@@ -1425,6 +1658,30 @@ h4 { font-size: 20px;}
 .service-list-section {
 	padding-top: 40px;
 }
+
+/* employ page quote form */
+.close-dialogbox:before {
+	font-size: 16px;
+}
+
+.employ-quote-form-title h2 {
+	font-size: 26px;
+}
+
+.employ-quote-form-title {
+	margin-bottom: 12px;
+}
+#popupname .popup-block {
+	max-width: 350px;
+}
+.pop-contentbox {
+	padding: 30px;
+}
+
+.close-dialogbox {
+	right: 30px;
+}
+
 		
 } 
 
@@ -1496,6 +1753,38 @@ h4 { font-size: 20px;}
 	padding: 30px 0;
 }
 
+/* employ quote form */
+#popupname .popup-block {
+	max-width: 300px;
+}
+
+.employ-quote-form-title h2 {
+	font-size: 22px;
+}
+
+.close-dialogbox {
+	top: 36px;
+}
+
+.close-dialogbox:before {
+	font-size: 14px;
+}
+
+.quotation-form-row label, .quotation-form-row .form-block .form-group label {
+	font-size: 14px;
+}
+
+.dienst-banner-section {padding: 60px 0;}
+.title-news-content h4 {
+	font-size: 22px;
+}
+.banner-row {
+	padding: 40px 0;
+}
+.dienst-banner-btn .button {
+	font-size: 18px;
+	padding: 6px 16px;
+}
 
 
 }

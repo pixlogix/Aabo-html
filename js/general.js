@@ -216,8 +216,75 @@
 			});
 		}
 
-
-
+    // employ pop up form js
+		
+    /* Popup function
+		---------------------------------------------------------------------*/
+		var $dialogTrigger = $('.poptrigger'),
+		$pagebody =  $('body');
+		$dialogTrigger.click( function(){
+			var popID = $(this).attr('data-rel');
+			$('body').addClass('overflowhidden');
+			var winHeight = $(window).height();
+			$('#' + popID).fadeIn();
+			var popheight = $('#' + popID).find('.popup-block').outerHeight(true);
+			
+			if( $('.popup-block').length){
+				var popMargTop = popheight / 2;
+				//var popMargLeft = ($('#' + popID).find('.popup-block').width()/2);
+				
+				if ( winHeight > popheight ) {
+					$('#' + popID).find('.popup-block').css({
+						'margin-top' : -popMargTop,
+						//'margin-left' : -popMargLeft
+					});	
+				} else {
+					$('#' + popID).find('.popup-block').css({
+						'top' : 0,
+						//'margin-left' : -popMargLeft
+					});
+				}
+				
+			}
+			
+			$('#' + popID).append("<div class='modal-backdrop'></div>");
+			$('.popouterbox .modal-backdrop').fadeTo("slow", 0.70);
+			if( popheight > winHeight ){
+				$('.popouterbox .modal-backdrop').height(popheight);
+			} 
+			$('#' + popID).focus();
+			return false;
+		});
+		
+		$(window).on("resize", function () {
+			if( $('.popouterbox').length && $('.popouterbox').is(':visible')){
+				var popheighton = $('.popouterbox .popup-block').height()+60;
+				var winHeight = $(window).height();
+				if( popheighton > winHeight ){
+					$('.popouterbox .modal-backdrop').height(popheighton);
+					$('.popouterbox .popup-block').removeAttr('style').addClass('taller');
+					
+				} else {
+					$('.popouterbox .modal-backdrop').height('100%');
+					$('.popouterbox .popup-block').removeClass('taller');
+					$('.popouterbox .popup-block').css({
+						'margin-top' : -(popheighton/2)
+					});
+				}	
+			}
+		});
+		
+		//Close popup		
+		$(document).on('click', '.close-dialogbox, .modal-backdrop', function(){
+			$(this).parents('.popouterbox').fadeOut(300, function(){
+				$(this).find('.modal-backdrop').fadeOut(250, function(){
+					$('body').removeClass('overflowhidden');
+					$('.popouterbox .popup-block').removeAttr('style');
+					$(this).remove();
+				});
+			});
+			return false;
+		});
 
 
 
