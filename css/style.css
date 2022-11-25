@@ -2584,7 +2584,7 @@ input.textbox.place { width: 294px; }
 .contact-mode { padding: 140px 0; }
 .contact-content { text-align: center; }
 .contact-content p { font-size: 23px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
-.contact-content a { font-size: 21px; font-weight: 400; line-height: 1.2; }
+.contact-content a { font-size: 21px; font-weight: 400; line-height: 1.2; text-decoration: none; }
 .contact-content span { display: block; }
 .contact-content i { font-size: 46px; margin-bottom: 46px; display: block; }
 
@@ -2595,6 +2595,69 @@ input.textbox.place { width: 294px; }
 
 
 /* Contact Page Complete */
+
+
+
+/* Work At Page Starts */
+
+.default-company-info-section.work-at { background: #ffffff; padding: 150px 0; }
+.default-company-info-section.work-at .wrap { max-width: 1353px; }
+.workat-image figure { border-radius: 10px; overflow: hidden; }
+.workat-image { max-width: 527px; margin: 0 auto; }
+.work-at .default-company-info-row { max-width: 1353px; }
+.work-at-banner-content h2 { font-size: 52px; font-weight: 400; color: #ac779f; }
+.work-at-banner-content { text-align: left; }
+.work-at-banner-content span { font-weight: 700; }
+.work-at-banner-content p { font-weight: 300; }
+
+.work-place-section { background: #9bc5ea; padding: 115px; text-align: center; }
+.workplace-details i { font-size: 120px; }
+.workplace-details h3 { font-weight: 400; font-size: 52px; }
+
+.vacancies-section { padding: 140px 0; text-align: center; }
+.vacancies-header { margin-bottom: 75px; }
+.vacancies-details .accordion-databox .accordion-row h5 { background: #ffffff; font-size: 32px; color: #ac779f; font-weight: 400; text-transform: initial; padding: 0; margin: 0; }
+.vacancies-details .accordion-databox .accordion-row { padding: 12px 75px; border: 1px solid #ac779f; border-radius: 12px; text-align: left; margin-bottom: 15px; overflow: scroll; }
+.vacancies-details .accordion-databox .accordion-row h5 span { font-weight: 700; }
+.vacancies-details { max-width: 987px; margin: 0 auto; }
+.vacancies-details .accordion-databox .accordion-row h5:before { display: none; }
+.vacancies-details .accordion-databox .accordion-row h5:after { content: '\e901'; font-family: 'icomoon'; border-left: none; border-right: none; border-top: none; font-size: 28px; margin-top: 0; right: 0; transform: translateY(-50%); } 
+.vacancies-details .accordion-databox .accordion-row h5.open:after { border-bottom: none; }
+.vacancies-details .accordion-data h6 { font-size: 32px; font-weight: 400; color: #ac779f; margin: 0; }
+.vacancies-details .accordion-data { padding: 35px 0; height: 560px; }
+.vacancies-details .accordion-data p { padding: 0; margin: 25px 0 30px; max-width: 790px; }
+.vacancies-contact ul { list-style-type: none; display: flex; align-items: center; padding: 0; margin: 0; }
+.vacancies-contact .button { font-size: 18px; font-weight: 500; text-transform: initial; padding: 7px 22px; }
+.vacancies-details .vacancies-contact p { font-size: 22px; font-weight: 400; margin: 0; padding-left: 40px; color: #ac779f; }
+.vacancies-contact a { position: relative; }
+.vacancies-contact i { position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 20px; color: #ac779f; }
+.vacancies-contact li { margin-right: 45px; }
+.vacancies-contact li:last-child { margin-right: 0px; }
+/* ::-webkit-scrollbar-thumb:horizontal { background: #ac779f; -webkit-border-radius: 5px; border-radius: 5px; }
+::-webkit-scrollbar-track { background: #f0efef; -webkit-border-radius: 5px; border-radius: 12px; }
+::-webkit-scrollbar { width: 11px; overflow-x: hidden; padding: 20px; } */
+
+
+.application-section { padding: 70px 0; position: relative; z-index: 1; text-align: center;}
+.application-section:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); z-index: -1; }
+.application-header { margin-bottom: 60px; color: #ac779f; }
+
+.application-section .wrap { max-width: 1353px; }
+.application-process .col { width: 14.28%; position: relative; }
+.application-number { position: relative; border: 1px solid #dc7986; width: 33px; height: 36px; border-radius: 4px; text-align: center; display: inline-block; color: #dc7986; font-weight: 600; font-size: 32px; background-color: #ffffff; }
+.application-number:before { content: ''; position: absolute; width: 1px; height: 70px; background: #dc7986; top: -70px; left: 50%; transform: translateX(-50%); }
+.application-process .col:nth-child(even) .application-number:before { top: 35px; }
+.application-process { padding: 200px 0 200px; }
+.application-details p { font-size: 18px; }
+.application-process .col:nth-child(even) .application-details { top: 110px; flex-direction: column-reverse;}
+.application-details { position: absolute; width: 310px; left: -50px; top: -180px; display: flex; align-items: center; flex-direction: column; }
+.application-process .col:before { content: ''; position: absolute; width: 100%; height: 2px; background-color: #dc779f; top: 50%; left: 0; transform: translateX(-50%); z-index: -1; }
+.application-process .col:first-child::before { display: none; } 
+.application-details h6 { font-size: 32px; }
+.application .home-our-expert-content { max-width: 525px; }
+.home-our-expert-section.application { margin-top: 0; padding: 220px 0 160px; }
+
+
 
 
 

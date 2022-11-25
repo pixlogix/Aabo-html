@@ -2478,18 +2478,20 @@ h4 { font-size: 20px;}
 	.info-form { margin-left: 20px; padding: 50px 0 30px; }
 	.contact-mode { padding: 80px 0; }
 	.contact-content i { font-size: 40px; margin-bottom: 30px; }
-	.contact-content p { margin-bottom: 10px; }
+	.contact-content p { margin-bottom: 10px; font-size: 20px; }
+	.contact-content a { font-size: 19px; }
 } 
 
 @media only screen and (max-width: 567px){
 	.contact-mode { padding: 50px 0; }
 	.contact-content i { font-size: 35px; margin-bottom: 15px; }
 	.contact-mode-row .col { width: 50%; margin-bottom: 30px; }
-	.contact-content p { margin-bottom: 5px; }
+	.contact-content p { margin-bottom: 5px; font-size: 16px; }
+	.contact-content a { font-size: 15px;}
 }
 
 @media only screen and (max-width: 479px) {
-	.contact-content i { margin-bottom: 15px; }
+	.contact-content i { margin-bottom: 15px; font-size: 30px;  }
 	.contact-mode-row .col { width: 100%; }
 	input.textbox.place { width: 100%; display: block; }
 	input.textbox.postal { width: 100%; display: block; }
