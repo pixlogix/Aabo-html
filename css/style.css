@@ -973,6 +973,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	transform: scale(1.1);
 }
 
+
 .home-news-card figure a {
 	display: block;
 	overflow: hidden;
@@ -1134,6 +1135,9 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	top:0;
 	background: rgba(255,255,255,0.9);
 }
+.dienst-our-expert-section .wrap {
+	max-width: 1486px;
+}
 .dienst-our-expert-row {
 	transform: translateY(-200px);
 }
@@ -1251,6 +1255,9 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	background: #a37a9d;
 	color: #fff;
 }
+.quotation-form-row .form-block .form-group .checkbox.small-checkbox label {
+	margin-bottom: 0;
+}
 
 
 /* employ pop up box css */
@@ -1266,10 +1273,9 @@ body.overflowhidden { overflow:hidden; padding-right:17px; }
 .pop-contentbox { background:#fff; padding:120px 120px 140px 120px;  border-radius:30px; box-shadow:0 0 10px rgba(0,0,0,.25);  }
 
 .popup-block .account-box { margin:0; }
-body.overflowhidden #header { padding-right:17px; }
-body.overflowhidden .main-bannerbox { left:-17px; }
-
-#popupname .popup-block { max-width:1276px; }
+/* body.overflowhidden #header { padding-right:17px; } */
+/* body.overflowhidden .main-bannerbox { left:-17px; } */
+#popupname .popup-block, #apply-here .popup-block { max-width:1276px; } 
 
 
 /* sitemap */
@@ -1280,7 +1286,178 @@ body.overflowhidden .main-bannerbox { left:-17px; }
 	margin-bottom: 10px;
 }
 
+/* =construction-companies page CSS 
+========================================================================================*/
+/* company agreement section start  */
+.company-agreement-section {
+	padding: 120px 0 368px 0;
+}
+.company-agreement-section .wrap {
+	max-width: 1116px;
+}
+.company-agreement-content h4 {
+	font-size: 38px;
+	line-height: 1;
+	color: #a37a9d;
+	font-weight: 600;
+	margin-bottom: 34px;
+}
+.company-agreement-content p {
+	font-size: 20px;
+	line-height: 1.5;
+}
+.company-agreement-content p:last-child {
+	margin-bottom: 0;
+}
+.company-agreement-content {
+	margin-bottom: 36px;
+}
+.company-agreement-content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.company-agreement-content ul li {
+	position: relative;
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 14px;
+	padding-left: 24px;
+}
+.company-agreement-content ul li:last-child {
+	margin-bottom: 40px;
+}
 
+
+.company-agreement-content ul li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 12px;
+	width: 12px;
+	height: 1px;
+	background: #37569f;
+}
+.company-agreement-content p:nth-child(2n) {
+	margin-bottom: 40px;
+}
+.company-agreement-btn {
+	padding-top: 16px;
+}
+.company-agreement-btn .button.btn-outline {
+	font-size: 28px;
+	font-weight: 600;
+	border-radius: 10px;
+	padding: 10px 36px;
+}
+/* company agreement section end */
+
+
+/* work at page css pop up form */
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex-wrap: wrap;
+  grid-gap: 80px;
+}
+.apply-here-form .pop-contentbox { background:#fff; padding:88px 150px 100px 150px;  border-radius:30px; box-shadow:0 0 10px rgba(0,0,0,.25);  }
+
+.contact-form-block {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 18px;
+	flex-wrap: wrap;
+}
+
+.contact-form-block .form-group {
+	grid-column: span 3;
+	padding: 0;
+}
+
+.contact-form-block .form-group.small-field {
+	grid-column: span 1;
+}
+
+.contact-form-block .form-group.medium {
+	grid-column: span 2;
+}
+
+.we-hire-arrow span {
+	display: block;
+	font-size: 38px;
+	line-height: 1;
+	font-weight: 600;
+	color: #a37a9d;
+}
+.we-hire-arrow {
+	position: relative;
+	padding-bottom: 250px;
+}
+
+.we-hire-arrow:before {
+	content: "";
+	background-image: url(../images/we-hire-arrow.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 145px;
+	height: 80px;
+	position: absolute;
+	top: 60px;
+	left: 0;
+
+}
+.drop_box .button.btn-outline {
+	font-size: 24px;
+	padding: 8px 12px;
+	font-weight: 400;
+}
+.we-hire-form .upload-submit-btn {
+	text-align: right;
+	margin-top: 20px;
+}
+.we-hire-form  input[type="submit"] {
+	background: #a37a9d;
+	color: #fff;
+	font-size: 16px;
+	padding: 6px 12px;
+}
+.we-hire-form  input[type="submit"]:hover {
+	background: #37569f;
+}
+.we-hire-form .form-block .form-group label {
+	font-size: 24px;
+	color: #a37a9d;
+	font-weight: 400;
+	line-height: 1;
+	padding-bottom: 18px;
+}
+.we-hire-form .form-block .form-group {
+	padding: 0;
+}
+.we-hire-form .form-block .form-group textarea {
+	height: 236px;
+	resize: none;
+}
+.contact-form-right {
+	display: flex;
+	align-items: flex-end;
+}
+.apply-here-title {
+	margin-bottom: 40px;
+}
+.apply-here-title h4 {
+	font-size: 53px;
+	color: #a37a9d;
+	line-height: 1.09;
+	margin-bottom: 0;
+}
+.apply-here-title h4 span {
+	font-weight: 400;
+}
+.apply-here-form .close-dialogbox:before {
+	color: #a37a9d;
+}
 
 
 

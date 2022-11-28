@@ -538,7 +538,7 @@ h4 {font-size: 30px;}
 	padding: 80px;
 }
 
-#popupname .popup-block {
+#popupname .popup-block, #apply-here .popup-block {
 	max-width: 900px;
 }
 
@@ -575,6 +575,80 @@ h4 {font-size: 30px;}
 }
 
 .dienst-our-expert-row {transform: translateY(-130px);}
+
+/* construction companies page responsive 
+====================================================*/
+.banner-row.construction-banner-row h1 {
+	font-size: 82px;
+}
+.company-agreement-section {
+	padding: 80px 0 230px 0;
+}
+.company-agreement-content h4 {
+	font-size: 34px;
+	margin-bottom: 22px;
+}
+
+.company-agreement-content p:nth-child(2n) {
+	margin-bottom: 22px;
+}
+
+.company-agreement-content p {
+	font-size: 18px;
+}
+.company-agreement-content {
+	margin-bottom: 28px;
+}
+.company-agreement-content ul li {
+	margin-bottom: 10px;
+}
+.company-agreement-content ul li {
+	margin-bottom: 10px;
+}
+.company-agreement-content ul li:last-child {
+	margin-bottom: 28px;
+}
+.company-agreement-btn .button.btn-outline {
+	font-size: 24px;
+	padding: 8px 34px;
+}
+
+/* we hire application form */
+.apply-here-title h4 {
+	font-size: 38px;
+}
+
+.apply-here-title {
+	margin-bottom: 28px;
+}
+
+.apply-here-form .pop-contentbox {
+	padding: 80px;
+}
+
+.we-hire-arrow span {
+	font-size: 28px;
+}
+.we-hire-arrow:before {
+	width: 120px;
+	height: 70px;
+}
+.drop_box .button.btn-outline {
+	font-size: 20px;
+}
+.contact-form-block {
+	grid-gap: 14px;
+}
+
+.we-hire-form .form-block .form-group label {
+	padding-bottom: 14px;
+	font-size: 22px;
+}
+.contact-form-row {
+	grid-gap: 60px;
+}
+
+
 
 
 }
@@ -855,7 +929,7 @@ h4 {font-size: 30px;}
 }
 
 /* employ quatation form */
-#popupname .popup-block {
+#popupname .popup-block, #apply-here .popup-block {
 	max-width: 700px;
 }
 
@@ -903,6 +977,48 @@ h4 {font-size: 30px;}
 	font-size: 32px;
 }
 
+/* construction companies page responsive 
+====================================================*/
+.company-agreement-section {
+	padding: 54px 0 180px 0;
+}
+.company-agreement-content h4 {
+	font-size: 30px;
+	margin-bottom: 18px;
+}
+.banner-row.construction-banner-row h1 {
+	font-size: 74px;
+}
+
+/* we hire application form */
+.apply-here-form .pop-contentbox {
+	padding: 40px;
+}
+
+.apply-here-title h4 {
+	font-size: 32px;
+}
+
+.apply-here-title {
+	margin-bottom: 20px;
+}
+
+.we-hire-form .form-block .form-group label {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.contact-form-block {
+	grid-gap: 10px;
+}
+.we-hire-arrow span {
+	font-size: 24px;
+}
+
+.we-hire-arrow:before {
+	width: 80px;
+	height: 44px;
+}
 
 
 
@@ -989,6 +1105,9 @@ h3 { font-size: 32px;}
 /* header sticky */
 #header.sticky #logo {
 	width: 110px;
+}
+#logo {
+	width: 136px;
 }
 /* header top */
 .header-top-info li a {
@@ -1153,11 +1272,13 @@ h3 { font-size: 32px;}
 
 /* employ quote form */
 .quotation-form-row >.cols2 > .col:first-child {
-	padding-right: 20px;
+	padding-right: 0;
+	width: 100%;
 }
 
 .quotation-form-row >.cols2 > .col:last-child {
-	padding-left: 20px;
+	padding-left: 0px;
+	width: 100%;
 }
 
 .employ-quote-form-title h2 {
@@ -1216,6 +1337,45 @@ h3 { font-size: 32px;}
 .dienst-banner-section {
 	padding: 110px 0;
 }
+
+/* construction companies page responsive 
+====================================================*/
+.banner-row.construction-banner-row h1 {
+	font-size: 58px;
+}
+.company-agreement-section {
+	padding: 44px 0 110px 0;
+}
+.company-agreement-content h4 {
+	font-size: 26px;
+	margin-bottom: 14px;
+}
+
+.company-agreement-content p {
+	font-size: 16px;
+}
+
+.company-agreement-content ul li {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.company-agreement-btn .button.btn-outline {
+	font-size: 18px;
+	padding: 8px 20px;
+}
+.company-agreement-content p:nth-child(2n) {
+	margin-bottom: 14px;
+}
+.company-agreement-btn {
+	padding-top: 10px;
+}
+.company-agreement-content {
+	margin-bottom: 22px;
+}
+.company-agreement-content ul li:last-child {
+	margin-bottom: 18px;
+}
+
 
 
 
@@ -1391,21 +1551,18 @@ h3 { font-size: 30px;}
 }
 
 /* employ quote form */
-.quotation-form-row >.cols2 > .col:first-child {
-	padding-right: 0;
-	width: 100%;
+.quotation-form-row label, .quotation-form-row .form-block .form-group label {
+	margin-bottom: 14px;
 }
 
-.quotation-form-row >.cols2 > .col:last-child {
-	width: 100%;
-	padding-left: 0;
+.quotation-form-row .form-group {
+	padding-bottom: 14px;
 }
-
 .pop-contentbox {
-	padding: 40px;
+	padding: 40px 20px;
 }
 
-#popupname .popup-block {
+#popupname .popup-block, #apply-here .popup-block {
 	max-width: 430px;
 }
 
@@ -1442,6 +1599,27 @@ h3 { font-size: 30px;}
 }
 .title-news-content p:last-child {
 	margin-bottom: 20px !important;
+}
+
+/* construction companies page responsive 
+====================================================*/
+.banner-row.construction-banner-row h1 {
+	font-size: 48px;
+}
+
+.company-agreement-section {
+	padding: 20px 0 50px 0;
+}
+
+.company-agreement-content h4 {
+	font-size: 24px;
+}
+.company-agreement-content ul li {
+	padding-left: 20px;
+}
+
+.company-agreement-content ul li:before {
+	width: 10px;
 }
 
 
@@ -1490,7 +1668,7 @@ h4 { font-size: 20px;}
 	width: 26px;
 }
 .header-top-info li {
-	margin-right: 16px;
+	margin-right: 20px;
 }
 
 .header-social-icon li {
@@ -1671,7 +1849,7 @@ h4 { font-size: 20px;}
 .employ-quote-form-title {
 	margin-bottom: 12px;
 }
-#popupname .popup-block {
+#popupname .popup-block, #apply-here .popup-block {
 	max-width: 350px;
 }
 .pop-contentbox {
@@ -1681,6 +1859,31 @@ h4 { font-size: 20px;}
 .close-dialogbox {
 	right: 30px;
 }
+
+/* construction companies page responsive 
+====================================================*/
+.banner-row.construction-banner-row h1 {
+	font-size: 42px;
+}
+.company-agreement-content h4 {
+	font-size: 22px;
+}
+
+.company-agreement-content p {
+	font-size: 14px;
+}
+
+.company-agreement-content ul li {
+	font-size: 14px;
+}
+
+.company-agreement-btn .button.btn-outline {
+	font-size: 16px;
+	padding: 6px 16px;
+}
+
+
+
 
 		
 } 
@@ -1754,7 +1957,7 @@ h4 { font-size: 20px;}
 }
 
 /* employ quote form */
-#popupname .popup-block {
+#popupname .popup-block, #apply-here .popup-block {
 	max-width: 300px;
 }
 
@@ -1784,6 +1987,11 @@ h4 { font-size: 20px;}
 .dienst-banner-btn .button {
 	font-size: 18px;
 	padding: 6px 16px;
+}
+/* construction companies page responsive 
+====================================================*/
+.banner-row.construction-banner-row h1 {
+	font-size: 36px;
 }
 
 
