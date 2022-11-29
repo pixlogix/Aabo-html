@@ -1262,19 +1262,92 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 
 /* employ pop up box css */
 
-.close-dialogbox { position:absolute; right:40px; top:50px;width:40px; height:40px; text-align:center; }
-.close-dialogbox:before { content:"\e90d";font-family:'icomoon'; position:absolute; left:50%; top:50%;color:#37569f;line-height: 1;display: block;font-size: 24px; transform: translate(-50%, -50%); }
+.close-dialogbox {
+	position:absolute;
+	z-index: 2;
+	right:30px;
+	top:30px;
+	width:30px;
+	height:30px;
+	line-height: 14px;
+	padding: 8px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	color: #37569f;
+}
+
+
 .close-dialogbox:hover {text-decoration:none }
-body.overflowhidden { overflow:hidden; padding-right:17px; }
-.popouterbox .popup-block {  display:block; position:absolute; top:50%; left:0; right:0; margin:0 auto; z-index: 99999; max-width:720px; width:100%; padding:30px 20px; }
-.popouterbox .popup-block.taller { top:0; }
-.popouterbox { bottom: 0; display: none; left: 0; overflow: hidden; overflow-x: hidden; overflow-y: auto; position: fixed; right: 0; top: 0; z-index: 999999999; }
-.modal-backdrop { display:none; background: #000; position: absolute; left: 0; top:0; width: 100%; height: 100%; z-index: 9999;  }
-.pop-contentbox { background:#fff; padding:120px 120px 140px 120px;  border-radius:30px; box-shadow:0 0 10px rgba(0,0,0,.25);  }
+
+body.overflowhidden {
+	overflow:hidden;
+	padding-right: 0; 
+}
+
+.popouterbox .popup-block {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index: 99999; 
+	max-width:720px;
+	width:100%;
+	padding:30px 20px; }
+	
+
+.popouterbox .popup-block.taller {
+	top: 0;
+}
+
+.popouterbox { 
+		bottom: 0;
+		display: none; 
+		left: 0;
+		overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: auto;
+		position: fixed;
+		right: 0;
+		top: 0; 
+		z-index: 999999999; 
+	}
+
+.modal-backdrop {
+	display:none;
+	background: #000;
+	position: absolute;
+	left: 0;
+	top:0; 
+	width: 100%; 
+	height: 100%;
+	z-index: 9999; 
+	}
+.pop-contentbox { 
+	background:#fff;
+	padding: 0;
+	height: 100%;
+	overflow-y: auto;
+	padding:120px 120px 140px 120px;
+	border-radius:30px;
+	box-shadow:0 0 10px rgba(0,0,0,.25);
+	position: relative;
+}
 
 .popup-block .account-box { margin:0; }
-/* body.overflowhidden #header { padding-right:17px; } */
-/* body.overflowhidden .main-bannerbox { left:-17px; } */
+
+body.overflowhidden #header {
+	padding-right: 0;
+}
+
+body.overflowhidden .main-bannerbox {
+	left:-17px;
+}
+
 #popupname .popup-block, #apply-here .popup-block { max-width:1276px; } 
 
 
@@ -1358,8 +1431,12 @@ body.overflowhidden { overflow:hidden; padding-right:17px; }
   display: grid;
   grid-template-columns: 2fr 1fr;
   flex-wrap: wrap;
-  grid-gap: 80px;
+  column-gap: 80px;
 }
+.motivation-block {
+	grid-column: 1/-1;
+}
+
 .apply-here-form .pop-contentbox { background:#fff; padding:88px 150px 100px 150px;  border-radius:30px; box-shadow:0 0 10px rgba(0,0,0,.25);  }
 
 .contact-form-block {
@@ -1455,7 +1532,7 @@ body.overflowhidden { overflow:hidden; padding-right:17px; }
 .apply-here-title h4 span {
 	font-weight: 400;
 }
-.apply-here-form .close-dialogbox:before {
+.apply-here-form .close-dialogbox {
 	color: #a37a9d;
 }
 

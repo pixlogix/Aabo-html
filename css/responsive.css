@@ -293,6 +293,12 @@ h3 { font-size: 44px;}
 	padding-bottom: 344px;
 }
 
+
+
+.we-hire-arrow span {
+	font-size: 34px;
+}
+
 	
 }
 
@@ -538,9 +544,6 @@ h4 {font-size: 30px;}
 	padding: 80px;
 }
 
-#popupname .popup-block, #apply-here .popup-block {
-	max-width: 900px;
-}
 
 .employ-quote-form-title h2 {
 	font-size: 44px;
@@ -645,7 +648,7 @@ h4 {font-size: 30px;}
 	font-size: 22px;
 }
 .contact-form-row {
-	grid-gap: 60px;
+	column-gap: 60px;
 }
 
 
@@ -929,10 +932,6 @@ h4 {font-size: 30px;}
 }
 
 /* employ quatation form */
-#popupname .popup-block, #apply-here .popup-block {
-	max-width: 700px;
-}
-
 .pop-contentbox {
 	padding: 54px;
 }
@@ -1018,6 +1017,26 @@ h4 {font-size: 30px;}
 .we-hire-arrow:before {
 	width: 80px;
 	height: 44px;
+}
+
+.apply-here-form .close-dialogbox, .close-dialogbox {
+	width: 24px;
+	height: 24px;
+	top: 24px;
+	right: 24px;
+}
+.drop_box .button.btn-outline {
+	font-size: 16px;
+}
+
+.we-hire-arrow {
+	padding-bottom: 200px;
+}
+.we-hire-form .form-block .form-group textarea {
+	height: 190px;
+}
+.contact-form-row {
+	column-gap: 40px;
 }
 
 
@@ -1288,18 +1307,16 @@ h3 { font-size: 32px;}
 .employ-quote-form-title {
 	margin-bottom: 22px;
 }
-
-.close-dialogbox:before {
-	font-size: 18px;
-}
-
 .close-dialogbox {
-	right: 36px;
-	top: 40px;
-	width: 30px;
-	height: 30px;
+ width: 20px;
+ height: 20px;
+ top: 20px;
+ right: 20px;
 }
 
+.pop-contentbox {
+	padding: 40px 24px;
+}
 .quotation-form-row label, .quotation-form-row .form-block .form-group label {
 	font-size: 16px;
 }
@@ -1376,6 +1393,31 @@ h3 { font-size: 32px;}
 	margin-bottom: 18px;
 }
 
+/* we hire pop up form */
+.contact-form-row {
+	grid-template-columns: 1fr;
+}
+
+.we-hire-arrow {
+	padding: 0;
+	display: none;
+}
+.apply-here-form .pop-contentbox {
+	padding: 24px;
+}
+.apply-here-title h4 {
+	font-size: 28px;
+}
+.contact-form-right {
+	display: block;
+}
+
+.drop_box .button.btn-outline {
+	width: 100%;
+}
+.we-hire-form .upload-submit-btn {
+	text-align: center;
+}
 
 
 
@@ -1558,16 +1600,11 @@ h3 { font-size: 30px;}
 .quotation-form-row .form-group {
 	padding-bottom: 14px;
 }
-.pop-contentbox {
-	padding: 40px 20px;
-}
 
-#popupname .popup-block, #apply-here .popup-block {
-	max-width: 430px;
-}
+
 
 .employ-quote-form-title h2 {
-	font-size: 28px;
+	font-size: 26px;
 }
 
 .employ-quote-form-title {
@@ -1622,6 +1659,20 @@ h3 { font-size: 30px;}
 	width: 10px;
 }
 
+/* we hire application form */
+.apply-here-title h4 {
+	font-size: 24px;
+}
+
+.apply-here-form .close-dialogbox {
+	width: 20px;
+	height: 20px;
+	top: 20px;
+	right: 20px;
+}
+.apply-here-title {
+	margin-bottom: 12px;
+}
 
 
 }
@@ -1838,27 +1889,15 @@ h4 { font-size: 20px;}
 }
 
 /* employ page quote form */
-.close-dialogbox:before {
-	font-size: 16px;
-}
 
 .employ-quote-form-title h2 {
-	font-size: 26px;
+	font-size: 24px;
 }
 
 .employ-quote-form-title {
 	margin-bottom: 12px;
 }
-#popupname .popup-block, #apply-here .popup-block {
-	max-width: 350px;
-}
-.pop-contentbox {
-	padding: 30px;
-}
 
-.close-dialogbox {
-	right: 30px;
-}
 
 /* construction companies page responsive 
 ====================================================*/
@@ -1881,7 +1920,15 @@ h4 { font-size: 20px;}
 	font-size: 16px;
 	padding: 6px 16px;
 }
+/* we hire pop up form */
 
+.we-hire-form .form-block .form-group label {
+	font-size: 16px;
+}
+
+.apply-here-title h4 {
+	font-size: 22px;
+}
 
 
 
@@ -1957,26 +2004,16 @@ h4 { font-size: 20px;}
 }
 
 /* employ quote form */
-#popupname .popup-block, #apply-here .popup-block {
-	max-width: 300px;
-}
-
 .employ-quote-form-title h2 {
-	font-size: 22px;
-}
-
-.close-dialogbox {
-	top: 36px;
-}
-
-.close-dialogbox:before {
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .quotation-form-row label, .quotation-form-row .form-block .form-group label {
 	font-size: 14px;
 }
-
+.pop-contentbox {
+	padding: 30px 20px;
+}
 .dienst-banner-section {padding: 60px 0;}
 .title-news-content h4 {
 	font-size: 22px;
@@ -1992,6 +2029,21 @@ h4 { font-size: 20px;}
 ====================================================*/
 .banner-row.construction-banner-row h1 {
 	font-size: 36px;
+}
+
+/* we hire pop up form */
+
+.apply-here-title h4 {
+	font-size: 20px;
+}
+.drop_box .button.btn-outline {
+	padding: 6px 10px;
+}
+.apply-here-form .close-dialogbox {
+	width: 18px;
+	height: 18px;
+	top: 18px;
+	right: 18px;
 }
 
 
