@@ -178,38 +178,38 @@
 
 		// aabo customer slider
 
-		if ($(".aabo-customer-slider").length) {
-			var swiper = new Swiper('.aabo-customer-slider', {
-				direction: 'horizontal',
-				spaceBetween: 20,
-				slidesPerView: 4,
-				// slidesPerColumn: 1,
-				loop: true,
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-				breakpoints: {
-					1200: {
-						slidesPerView: 4
-					},
-					// 1023: {slidesPerView: 6},
-					768: {
-						slidesPerView: 3
-					},
-					479: {
-						slidesPerView: 2
-					},
-					375: {
-						slidesPerView: 1
-					},
-					220: {
-						slidesPerView: 1
-					}
-				}
+		// if ($(".aabo-customer-slider").length) {
+		// 	var swiper = new Swiper('.aabo-customer-slider', {
+		// 		direction: 'horizontal',
+		// 		spaceBetween: 20,
+		// 		slidesPerView: 4,
+		// 		// slidesPerColumn: 1,
+		// 		loop: true,
+		// 		navigation: {
+		// 			nextEl: ".swiper-button-next",
+		// 			prevEl: ".swiper-button-prev",
+		// 		},
+		// 		breakpoints: {
+		// 			1200: {
+		// 				slidesPerView: 4
+		// 			},
+		// 			// 1023: {slidesPerView: 6},
+		// 			768: {
+		// 				slidesPerView: 3
+		// 			},
+		// 			479: {
+		// 				slidesPerView: 2
+		// 			},
+		// 			375: {
+		// 				slidesPerView: 1
+		// 			},
+		// 			220: {
+		// 				slidesPerView: 1
+		// 			}
+		// 		}
 
-			});
-		}
+		// 	});
+		// }
 
 
 		// jQuery counter up
@@ -341,7 +341,7 @@
 			},
 		});
 
-		/* News Swiper Slider */
+		// /* News Swiper Slider */
 
 		var swiper = new Swiper(".newsSwiper", {
 			navigation: {
@@ -350,18 +350,18 @@
 			},
 		});
 
-		//   initiate_slider(0,".directorSwiper");
-		//   initiate_slider(1,".newsSwiper");
+		  initiate_slider(0,".directorSwiper");
+		  initiate_slider(1,".newsSwiper");
 
-		//   var swiper = [];
-		//   function initiate_slider(index, identifier){
-		// 	swiper[index]= new Swiper(identifier, {
-		// 		navigation: {
-		// 		  nextEl: ".swiper-button-next",
-		// 		  prevEl: ".swiper-button-prev",
-		// 		},
-		// 	  });
-		//   }
+		  var swiper = [];
+		  function initiate_slider(index, identifier){
+			swiper[index]= new Swiper(identifier, {
+				navigation: {
+				  nextEl: ".swiper-button-next",
+				  prevEl: ".swiper-button-prev",
+				},
+			  });
+		  }
 
 		/* Newsletter-section*/
 
@@ -385,6 +385,141 @@
 				}
 			});
 		}
+
+
+
+		// var galleryTop = new Swiper('.timeline-slider', {
+		// 	spaceBetween: 20,
+		// 	loop: true,
+		// 	loopedSlides: 4,
+		// 	noSwiping: false,
+		// 	simulateTouch: false,
+		// 	centeredSlides: true,
+		// 	slidesPerView: 3,
+			
+		// 	breakpoints: {
+		// 		320: {
+		// 		  slidesPerView: 1,
+		// 		  spaceBetween: 0
+		// 		},
+		// 		567: {
+		// 		  slidesPerView: 2,
+		// 		  spaceBetween: 5
+		// 		},
+		// 		768: {
+		// 		  slidesPerView: 3,
+		// 		  spaceBetween: 20
+		// 		},
+		// 		1441: {
+		// 			slidesPerView: 4,
+		// 			spaceBetween: 20
+		// 		}
+		// 	  }
+		// });
+		// var galleryThumbs = new Swiper('.timeline-year', {
+		// 	spaceBetween: 20,
+		// 	centeredSlides: true,
+		// 	slidesPerView: 'auto',
+		// 	touchRatio: 0.2,
+		// 	slideToClickedSlide: true,
+		// 	loop: true,
+		// 	loopedSlides: 4,
+		// 	thumbs: {
+		// 		galleryThumbs: galleryTop,
+		// 	  },
+		// 	navigation: {
+		// 		nextEl: ".swiper-button-next",
+		// 		prevEl: ".swiper-button-prev",
+		// 	},
+		// 	breakpoints: {
+		// 		320: {
+		// 			slidesPerView: 1,
+		// 			spaceBetween: 0
+		// 		},
+		// 		567: {
+		// 			slidesPerView: 2,
+		// 			spaceBetween: 5
+		// 		},
+		// 		768: {
+		// 			slidesPerView: 'auto',
+		// 			spaceBetween: 20
+		// 		}
+		// 	}
+			
+		// });
+
+		// var swiper = new Swiper(".timeline-slider", {
+		// 	loop: true,
+		// 	spaceBetween: 0,
+		// 	slidesPerView: 5,
+		// 	freeMode: false,
+		// 	watchSlidesProgress: true,
+		//   });
+		//   var swiper2 = new Swiper(".timeline-year", {
+		// 	loop: true,
+		// 	spaceBetween: 0,
+		// 	freeMode: true,
+		// 	navigation: {
+		// 	  nextEl: ".swiper-button-next",
+		// 	  prevEl: ".swiper-button-prev",
+		// 	},
+		// 	thumbs: {
+		// 		swiper2: swiper,
+		// 	},
+		//   });
+		  var swiper = new Swiper(".timeline-slider", {
+			loop: true,
+			spaceBetween: 0,
+			slidesPerView: "auto",
+			slidesPerView: 5,
+			centeredSlides: true,
+			slidesPerGroupSkip: 1,
+			slideToClickedSlide: true,
+			freeMode: false,
+			breakpoints: {
+						375: {
+							slidesPerView: 3,
+							spaceBetween: 0
+						},
+						568: {
+							slidesPerView: 5,
+							spaceBetween: 0
+						}
+					}
+			
+		  });
+		//   var swiper2 = new Swiper(".timeline-year", {
+		// 	loop: true,
+		// 	spaceBetween: 0,
+		// 	navigation: {
+		// 		nextEl: ".swiper-button-next",
+		// 		prevEl: ".swiper-button-prev",
+		// 	  },
+		// 	thumbs: {
+		// 		swiper: swiper,
+		// 	  },
+		//   });
+	  
+	
+		// galleryTop.controller.control = galleryThumbs;
+		// galleryThumbs.controller.control = galleryTop;
+
+		
+	
+	
+		// galleryThumbs.on("slideChangeTransitionStart", function() {
+		// 	gsap.fromTo(".timeline-year .swiper-slide.swiper-slide-active .swiper-slide-container span > span", {
+		// 		y: 50,
+		// 		autoAlpha: 0
+		// 	}, {
+		// 		duration: 0.8,
+		// 		ease: "power3.out",
+		// 		y: 0,
+		// 		stagger: 0.2,
+		// 		autoAlpha: 1,
+		// 		clearProps: "all"
+		// 	});
+		// });
 
 		/*--------------------------------------------------------------------------------------------------------------------------------------*/
 	});
