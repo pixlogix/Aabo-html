@@ -50,7 +50,7 @@ figure img { max-width: 100%; display: block;}
 .cols2 .col { width:50% }
 .cols3 .col { width:33.333333333333%; }
 .cols4 .col { width:25%; }
-.cols5 .col { width:20%; }
+.cols5 .col { width:20%; } 
 
 /* =Blockquote & highlight
 ========================================================================================*/
@@ -3059,6 +3059,7 @@ input.textbox.place { width: 294px; }
 .vacancies-details .accordion-databox .accordion-row h5.open::after { border-bottom: none; rotate: 180deg; transform: translateY(15px); transition: all 350ms ease-in-out; }
 #mCSB_2_dragger_vertical { height: 92px!important; }
 .mCSB_scrollTools a + .mCSB_draggerContainer { margin: 60px 0; }
+
   
 
 
