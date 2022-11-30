@@ -1463,9 +1463,7 @@ h3 { font-size: 30px;}
 #logo {
 	width: 130px;
 }
-.header-top-info li {
-	margin-right: 8px;
-}
+
 
 
 /* banner section  */
@@ -1822,7 +1820,7 @@ h4 { font-size: 20px;}
 	padding-bottom: 0;
 }
 .home-our-expert-section, .home-our-expert-section.service-our-expert-section {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 	/* footer section */
 
