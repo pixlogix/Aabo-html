@@ -66,3 +66,13 @@
 .icon-right-arrow:before {
   content: "\e909";
 }
+.icon-service:before {
+  content: "\e90a";
+}
+.icon-up-arrow:before {
+  content: "\e90b";
+}
+.icon-waterdrop:before {
+  content: "\e90c";
+}
+
