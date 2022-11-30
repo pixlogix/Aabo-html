@@ -25,7 +25,16 @@
 }
 
 .icon-close-btn:before {
+  content: "\e910";
+}
+.icon-contact-mail:before {
   content: "\e90d";
+}
+.icon-location-pin:before {
+  content: "\e90e";
+}
+.icon-telephone:before {
+  content: "\e90f";
 }
 .icon-clock:before {
   content: "\e900";
@@ -56,13 +65,4 @@
 }
 .icon-right-arrow:before {
   content: "\e909";
-}
-.icon-service:before {
-  content: "\e90a";
-}
-.icon-up-arrow:before {
-  content: "\e90b";
-}
-.icon-waterdrop:before {
-  content: "\e90c";
 }
