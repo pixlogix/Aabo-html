@@ -454,7 +454,7 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .accordion-databox .accordion-row:first-child { border-top:0; }
 .accordion-databox .accordion-row h5 { cursor:pointer; margin:0; background:#f3f3f3; color:#555; position:relative; padding:16px 54px 16px 16px; font-weight:600; font-size:15px; margin-bottom:7px; text-transform:uppercase; }
 .accordion-databox .accordion-row h5:before { position:absolute; right:0; top:0; content:''; width:54px; height:100%; z-index:1; background:rgba(0,0,0,0.08); } 
-.accordion-databox .accordion-row h5:after { content:''; position:absolute; right:18px; top:50%; margin-top:-4px; border-top:solid 8px #818181; border-left:solid 8px transparent; border-right:solid 8px transparent; z-index:2  }
+.accordion-databox .accordion-row h5:after { content:''; position:absolute; right:18px; top:50%; margin-top:-4px; border-top:solid 8px #818181; border-left:solid 8px transparent; border-right:solid 8px transparent; z-index:2; transition: all 350ms ease-in-out;  }
 .accordion-databox .accordion-row h5.open { color:#272c2f;}
 .accordion-databox .accordion-row h5.open:after { border-top:0; border-bottom:solid 8px #272c2f; }
 .accordion-data { display:none; padding:15px 0; }
@@ -2827,11 +2827,13 @@ body.overflowhidden .main-bannerbox {
 
 /*Neel Css-------------------------------------------------------------------------------*/
 
-/* Contact-us Section*/
+/* Contact-us Page Section*/
 
 .team-section { padding: 0 0 50px; }
 .team-section .wrap { max-width: 1540px; }
 .directors-details { display: flex; align-items: flex-end; flex-wrap: nowrap; }
+.directors-details:hover .director-image figure img { transform: scale(1.15); }
+.directors-details:hover .director-info p { transform: scale(1.05); }
 .director-image { max-width: 372px; }
 .director-info { position: relative; margin-bottom: 70px; }
 .director-info:before { content: ''; width: 544px; height: 243px; position: absolute; background: #f0f0f0; bottom: -70px; left: -75%; border-radius: 7px; z-index: -1; }
@@ -2840,8 +2842,8 @@ body.overflowhidden .main-bannerbox {
 .swiper.directorSwiper { padding-bottom: 150px; }
 .team-section .swiper-button-prev { left: 44%; }
 .team-section .swiper-button-next { right: 44%; }
-.director-image figure img { filter: drop-shadow(2px 4px 6px black); }
-.director-info p { font-size: 33px; font-weight: 600; color: #ac779f; }
+.director-image figure img { filter: drop-shadow(2px 4px 6px black); transition: all 350ms ease-in-out; }
+.director-info p { font-size: 33px; font-weight: 600; color: #ac779f; transition: all 350ms ease-in-out; }
 .directorSwiper .swiper-button-next:after, .directorSwiper .swiper-button-prev:after { font-size: 34px; font-weight: 700; }
 .director-row a:hover { text-decoration: none;}
 
@@ -2866,105 +2868,18 @@ body.overflowhidden .main-bannerbox {
 .timeline-year span { display: block; font-size: 100px; }
 .timeline-content p { font-size: 20px; line-height: 1.2; margin-bottom: 35px; }
 .timeline-content p:last-child { margin-bottom: 0; }
-
-
-.line-circle {
-    width: 7px;
-    background-color: #ac779f;
-	position: absolute;
-	left: 0;
-	top: 100%;
-	right: 0;
-	margin: 0 auto;
-	height: 0;
-	transition: height 350ms;
-}
-
-.line-circle:before {
-    position: absolute;
-	content: '';
-    width: 67px;
-    height: 67px;
-    left: 50%;
-    transform: translateX(-50%);
-    line-height: 24px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #ffffff;
-    bottom: -33px;
-    border: 14px solid #ac779f;
-    z-index: 1;
-	opacity: 1;
-	display: none;
-}
-.timeline-slider figure {
-    transform: translateY(50%);
-}
-
+.line-circle { width: 7px; background-color: #ac779f; position: absolute; left: 0; top: 100%; right: 0; margin: 0 auto; height: 0; transition: height 350ms; }
+.line-circle:before { position: absolute; content: ''; width: 67px; height: 67px; left: 50%; transform: translateX(-50%); line-height: 24px; text-align: center; border-radius: 50%; background-color: #ffffff; bottom: -33px; border: 14px solid #ac779f; z-index: 1; opacity: 1; display: none; }
+.timeline-slider figure { transform: translateY(50%); }
 .timeline-slider .swiper-slide.swiper-slide-active .timeline-content { width: 480px; }
-
-
 .slider-section { overflow: hidden; min-height: 1050px; }
 .timeline-year .swiper-slide { opacity: 0; visibility: hidden; }
-
 .timeline-slider .swiper-slide.swiper-slide-active .timeline-content { opacity: 1; visibility: visible; transform: none;  }
-
 .timeline-slider .swiper-slide.swiper-slide-active  .timeline-year { transform: scale(0); }
 .timeline-slider .swiper-slide.swiper-slide-active .line-circle { height: 96px; }
 .timeline-slider .swiper-slide.swiper-slide-active .timeline-circle { top: calc(100% + 96px); }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Contact us page complete */
 
 
 
@@ -2978,8 +2893,9 @@ body.overflowhidden .main-bannerbox {
 
 .news-section { padding: 150px 0; }
 .news-titles { border-radius: 20px; margin-bottom: 45px; box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.1); background-color: #f2f2f3; overflow: hidden; max-width: 375px; }
-.news-titles img { border-radius: 12px; overflow: hidden; }
-.news-titles figure { overflow: hidden; }
+.news-titles img { transition: all 350ms ease-in-out; }
+.news-titles a:hover img { transform: scale(1.2); }
+.news-titles figure { overflow: hidden; border-radius: 12px; }
 .news-content { padding: 16px 34px 28px 28px;  }
 .news-content p { line-height: 1.2; margin-bottom: 15px; }
 .news-content .button.btn-outline { font-size: 17px; padding: 5px 10px; }
@@ -3009,7 +2925,7 @@ body.overflowhidden .main-bannerbox {
 .newsletter-year i { position: absolute; right: 0px; font-size: 22px; bottom: 0; }
 
 
-
+/* News Page complete */
 
 
 
@@ -3105,18 +3021,20 @@ input.textbox.place { width: 294px; }
 .work-at-banner-content p { font-weight: 300; }
 
 .work-place-section { background: #9bc5ea; padding: 115px 0; text-align: center; }
-.workplace-details i { font-size: 120px; transition: all 350ms ease-in-out; }
-.workplace-details h3 { font-weight: 400; font-size: 52px; }
+.workplace-details i { font-size: 120px; transition: all 350ms ease-in-out; display: block; }
+.workplace-details:hover i { transform: scale(1.2); }
+.workplace-details h3 { font-weight: 400; font-size: 52px; transition: all 350ms ease-in-out; }
+.workplace-details:hover h3 { transform: scale(1.05);}
 .workplace-row a:hover { text-decoration: none; }
 
 .vacancies-section { padding: 140px 0; text-align: center; }
 .vacancies-header { margin-bottom: 75px; }
-.vacancies-details .accordion-databox .accordion-row h5 { background: #ffffff; font-size: 32px; color: #ac779f; font-weight: 400; text-transform: initial; padding: 0; margin: 0; }
-.vacancies-details .accordion-databox .accordion-row { padding: 12px 75px; border: 1px solid #ac779f; border-radius: 12px; text-align: left; margin-bottom: 15px; }
+.vacancies-details .accordion-databox .accordion-row h5 { background: #ffffff; font-size: 32px; color: #ac779f; font-weight: 400; text-transform: initial; padding: 0; margin: 0; transition: all 350ms ease-in-out; }
+.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 75px; border: 1px solid #ac779f; border-radius: 12px; text-align: left; margin-bottom: 15px; }
 .vacancies-details .accordion-databox .accordion-row h5 span { font-weight: 700; }
 .vacancies-details { max-width: 987px; margin: 0 auto; }
 .vacancies-details .accordion-databox .accordion-row h5:before { display: none; }
-.vacancies-details .accordion-databox .accordion-row h5:after { content: '\e901'; font-family: 'icomoon'; border-left: none; border-right: none; border-top: none; font-size: 28px; margin-top: 0; right: 0; transform: translateY(-50%); } 
+.vacancies-details .accordion-databox .accordion-row h5:after { content: '\e901'; font-family: 'icomoon'; border-left: none; border-right: none; border-top: none; font-size: 28px; margin-top: 0; right: 0; transform: translateY(-50%); transition: all 350ms ease-in-out; } 
 .vacancies-details .accordion-databox .accordion-row h5.open:after { border-bottom: none; }
 .vacancies-details .accordion-data h6 { font-size: 32px; font-weight: 400; color: #ac779f; margin: 0; }
 .vacancies-details .accordion-data { padding: 35px 0; }
@@ -3133,18 +3051,23 @@ input.textbox.place { width: 294px; }
 .vacancies-contact { margin-bottom: 50px; }
 .vacancies-contact a:hover { text-decoration: none; color: #2d55a4; }
 .vacancies-contact a:hover i { color: #2d55a4; }
+.vacancies-contact .button:hover { background: #ac779f; }
 .vacancies-contact .button:hover { background-color: #2d55a4; color: #ffffff; }
 .accordion-row .mCSB_draggerContainer { width: 11px; background-color: #f0efef; border-radius: 6px; max-height: 510px; }
 .mCSB_scrollTools .mCSB_dragger { max-height: 92px; height: auto; color: #f0efef;}
-.mCS-dark.mCSB_scrollTools .mCSB_draggerRail { background-color: red; }
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail { max-height: 0; height: 0; }
+.vacancies-details .accordion-databox .accordion-row h5.open::after { border-bottom: none; rotate: 180deg; transform: translateY(15px); transition: all 350ms ease-in-out; }
+#mCSB_2_dragger_vertical { height: 92px!important; }
+.mCSB_scrollTools a + .mCSB_draggerContainer { margin: 60px 0; }
+  
 
 
+ 
 
 
 .application-section { padding: 70px 0; position: relative; z-index: 1; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: center center; }
 .application-section:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); z-index: -1; }
 .application-header { margin-bottom: 60px; color: #ac779f; }
-
 .application-section .wrap { max-width: 1353px; }
 .application-process .col { width: 14.28%; position: relative; }
 .application-number { position: relative; border: 1px solid #dc7986; width: 33px; height: 36px; border-radius: 4px; text-align: center; display: inline-block; color: #dc7986; font-weight: 600; font-size: 32px; background-color: #ffffff; line-height: 1; }
@@ -3160,6 +3083,8 @@ input.textbox.place { width: 294px; }
 .application .home-our-expert-content { max-width: 525px; }
 .home-our-expert-section.application { margin-top: 0; padding: 220px 0 160px; }
 
+
+/* Work At Page Complete */
 
 
 

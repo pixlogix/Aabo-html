@@ -3087,7 +3087,7 @@ h4 { font-size: 20px;}
 
 	.vacancies-details .accordion-databox .accordion-row h5 { font-size: 28px; }
 	.vacancies-details .accordion-data h6 { font-size: 28px; }
-	.vacancies-details .accordion-databox .accordion-row { padding: 12px 65px; }
+	.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 65px; }
 	.vacancies-section { padding: 100px 0;}
 	.vacancies-header { margin-bottom: 60px;}
 	.vacancies-contact li { margin-right: 40px; }
@@ -3136,7 +3136,7 @@ h4 { font-size: 20px;}
 
 	.vacancies-details .accordion-data h6 { font-size: 24px; }
 	.vacancies-details .accordion-databox .accordion-row h5 { font-size: 24px; }
-	.vacancies-details .accordion-databox .accordion-row { padding: 12px 35px; }
+	.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 35px; }
 	.vacancies-section { padding: 70px 0;}
 	.vacancies-header { margin-bottom: 40px; }
 	.vacancies-details .accordion-data { padding: 25px 0;}
@@ -3156,7 +3156,7 @@ h4 { font-size: 20px;}
 	.workplace-row .col:last-child { margin-bottom: 0; } 
 	.home-our-expert-section.application { padding: 50px 0; }
 	.application-section { padding: 50px 0;}
-	.vacancies-details .accordion-databox .accordion-row { padding: 12px 25px; }
+	.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 25px; }
 	.vacancies-section { padding: 50px 0;}
 	.vacancies-header { margin-bottom: 30px; }
 	
@@ -3226,7 +3226,7 @@ h4 { font-size: 20px;}
 	.history-section { padding: 70px 0; }
 	.history-header { margin-bottom: 40px; }
 	.timeline-year p { font-size: 20px; }
-	.timeline-year span { font-size: 70px; }
+	.timeline-year span { font-size: 60px; }
 	.timeline-slider .swiper-slide.swiper-slide-active .timeline-content { width: 450px; }
 	.timeline-content { left: calc(100% - 60px); }
 	.timeline-content h4 { font-size: 40px; }
@@ -3236,6 +3236,16 @@ h4 { font-size: 20px;}
 
 	.director-info p { font-size: 25px; margin-bottom: 15px; }
 	.director-info::before { width: 410px; height: 240px; }
+	.director-image { max-width: 220px; }
+	.director-info p { font-size: 21px; }
+	.director-info span { font-size: 18px; }
+	.director-info::before { width: 280px; height: 200px; left: -95px; }
+	.swiper.directorSwiper { padding-bottom: 120px; }
+
+	.team-section .swiper-button-prev { left: 40%; }
+	.team-section .swiper-button-next { right: 40%; }
+	.directorSwiper .swiper-button-next::after, .directorSwiper .swiper-button-prev::after { font-size: 25px; }
+	  
 	  
 }
 
@@ -3252,7 +3262,13 @@ h4 { font-size: 20px;}
 	.timeline-circle { width: 50px; height: 50px; border: 8px solid #ac779f; margin-top: -20px; }
 	.history-header { margin-bottom: 30px; }
 	.timeline-content p { margin-bottom: 20px; }
-	.director-image { max-width: 200px; }
+	.director-image { max-width: 200px; margin: 0 auto;}
+
+	.directors-details { flex-direction: column; align-items: center; } 
+	.director-info::before { width: 280px; height: 330px; left: -30px; }	  
+	.director-info::before { width: 280px; height: 330px; left: -30px; }	  
+	.director-info p { margin-top: 30px; }
+	.team-section .swiper-button-next, .team-section .swiper-button-prev { padding: 25px ;}
 }
 
 
@@ -3270,6 +3286,15 @@ h4 { font-size: 20px;}
 	.timeline-content p { margin-bottom: 15px; }
 	.timeline-year { margin-bottom: 30px; }
 	.history-section { padding: 50px 0;}
+
+	.director-info { margin-bottom: 40px;}
+	.director-info::before { height: 270px; bottom: -10px; }
+	.swiper.directorSwiper { padding-bottom: 80px; }
+
+	.team-section .swiper-button-next, .team-section .swiper-button-prev { padding: 22px; }
+	.directorSwiper .swiper-button-next::after, .directorSwiper .swiper-button-prev::after { font-size: 22px; }
+	.team-section .swiper-button-prev { left: 35%; }
+	.team-section .swiper-button-next { right: 35%; }
 }
 
 @media only screen and (max-width: 567px) {
@@ -3279,6 +3304,12 @@ h4 { font-size: 20px;}
 	.timeline-content p { margin-bottom: 10px; }
 	.history-header { margin-bottom: 20px; }
 	.timeline-year span { margin-top: 0;}
+
+	.director-row .col { width: 100%; }
+	.director-info p { margin-bottom: 10px; }
+	.director-info { margin-bottom: 0;}
+	.director-info::before { width: 300px; }
+	.team-section { padding: 0;}
 }
 
 @media only screen and (max-width: 479px) {
@@ -3286,7 +3317,15 @@ h4 { font-size: 20px;}
 	.history-header { margin-bottom: 15px; }
 	.slider-section { min-height: 750px; }
 	.timeline-slider .swiper-slide.swiper-slide-active .timeline-content { width: 240px; }
+
+	.team-section .swiper-button-next, .team-section .swiper-button-prev { padding: 20px; }
+	.directorSwiper .swiper-button-next::after, .directorSwiper .swiper-button-prev::after { font-size: 15px; }
+
 }
+
+
+/* About Us Responsive Complete */
+
 
 
 
