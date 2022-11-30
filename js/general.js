@@ -302,6 +302,8 @@
 			return false;
 		});
 
+		
+
 		// drop box js
     if($(".drop_box").length) {
 			const dropArea = document.querySelector(".drop_box"),

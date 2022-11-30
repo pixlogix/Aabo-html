@@ -161,32 +161,37 @@ p.drop-caps.secundary:first-child:first-letter { background-color: #2d55a4; colo
 .header-top .wrap-small { max-width: 1253px;}
 .header-top-info li {
 	margin-right: 28px;
-	position: relative;
-}
-
-.header-top-info li:last-child {
-	margin-right: 0;
-}
-.header-top-info li {
 	font-size: 12px;
 	line-height: 1.18;
 	font-weight: 600;
 	transition: all 0.3s linear;
 	letter-spacing: 0.05em;
-	padding-left: 28px;
+}
+
+.header-top-info li:last-child {
+	margin-right: 0;
+}
+
+.header-top-info li a {
+  display: flex;
+  align-items: center;
+}
+.header-top-info li p {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
 }
 .header-top-info li:hover a {
 	color: #000;
 	text-decoration: none;
 }
 .header-top-info li i {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
 	font-size: 14px;
 	line-height: 1;
-	display: block;
+	display: flex;
+	margin-right: 12px;
+	
+
 }
 
 .header-social-icon li {

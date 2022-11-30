@@ -1134,10 +1134,12 @@ h3 { font-size: 32px;}
 }
 .header-top-info li {
 	padding-left: 0;
+	margin-right: 12px;
 }
 
 .header-top-info li i {
 	font-size: 18px;
+	margin-right: 0;
 }
 
 .header-time {
@@ -1461,6 +1463,10 @@ h3 { font-size: 30px;}
 #logo {
 	width: 130px;
 }
+.header-top-info li {
+	margin-right: 8px;
+}
+
 
 /* banner section  */
  .banner-img {
@@ -1718,9 +1724,7 @@ h4 { font-size: 20px;}
 .menulines:before, .menulines:after {
 	width: 26px;
 }
-.header-top-info li {
-	margin-right: 20px;
-}
+
 
 .header-social-icon li {
 	margin-right: 16px;
