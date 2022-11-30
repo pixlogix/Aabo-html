@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.mCustomScrollbar.css">
     <!-- End of google fonts -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -19,7 +20,7 @@
 <body>
 <div id="wrapper">
     <div class="login-portal">
-        <a href="#">Inloggen Portal</a>
+        <a href="#" class="button">Inloggen Portal</a>
     </div>
     <!-- header section start -->
 	<header id="header">
@@ -27,9 +28,9 @@
             <div class="wrap-small">
                 <div class="header-top-row">
                     <ul class="header-top-info">
-                        <li><i class="icon-phone"></i><a href="tel:310548538500">+31 (0)548 538 500</a></li>
-                        <li><i class="icon-mail"></i><a href="mailto:info@aabo-rijssen.nl">info@aabo-rijssen.nl</a></li>
-                        <li><i class="icon-clock"></i><a href="#">Maandag - Vrijdag: 08.30 - 17.00</a></li>
+                        <li><a href="tel:310548538500"><i class="icon-phone"></i>+31 (0)548 538 500</a></li>
+                        <li><a href="mailto:info@aabo-rijssen.nl"><i class="icon-mail"></i>info@aabo-rijssen.nl</a></li>
+                        <li class="header-time"><p><i class="icon-clock"></i> Maandag - Vrijdag: 08.30 - 17.00</p></li> 
                     </ul>
                     <ul class="header-social-icon">
                         <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -47,12 +48,12 @@
                     </a>
                     <nav id="mainmenu">
                         <ul>
-                            <li><a href="#" title="Diensten">Diensten</a></li>
-                            <li><a href="#" title="Nieuws">Nieuws</a></li>
-                            <li><a href="#" title="Sectoren">Sectoren</a></li>
-                            <li><a href="#" title="Werken bij">Werken bij</a></li>
-                            <li><a href="#" title="Contact">Contact</a></li>
-                            <li><a href="#" title="Over ons">Over ons</a></li>
+                            <li><a href="#" title="Diensten" target="_blank">Diensten</a></li>
+                            <li><a href="#" title="Nieuws" target="_blank">Nieuws</a></li>
+                            <li><a href="#" title="Sectoren" target="_blank">Sectoren</a></li>
+                            <li><a href="#" title="Werken bij" target="_blank">Werken bij</a></li>
+                            <li><a href="#" title="Contact" target="_blank">Contact</a></li>
+                            <li><a href="#" title="Over ons" target="_blank">Over ons</a></li>
                         </ul>
                     </nav><!--/#mainmenu-->
                 </div>
@@ -315,29 +316,43 @@
 			</div><!--/#content-->
 		</div><!--/#primary-->    
 	</div><!--/#main -->
-    <!-- footer section start -->
-    <footer id="footer">
+     <!-- footer section start -->
+     <footer id="footer">
         <div class="footer-top">
             <div class="wrap-small">
                 <div class="footer-info">
-                    <div class="cols cols3">
+                    <div class="cols cols4">
                         <div class="col">
                             <div class="footer-title">
-                                <h3>Adres</h3>
+                                <h3>Aabo BV</h3>
                             </div>    
                             <ul class="web-address">
-                                <li><a href="https://goo.gl/maps/MsUh9x2Xmg4aYrRy7">
-                                    <address>Aabo bv <br>karel doormanstraat 2 <br>7461 er rijssen</address>
+                                <li><a href="https://goo.gl/maps/MsUh9x2Xmg4aYrRy7" target="_blank" class="address">
+                                    <address>karel doormanstraat 2 <br>7461 er rijssen</address>
                                 </a></li>
+                                <li>Tel. <a href="tel:0548538500">0548 - 538500</a></li>
+                                <li><a href="mailto:info@aabo-rijssen.nl">info@aabo-rijssen.nl</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div class="footer-title">
+                                <h3>Openingstijden</h3>
+                            </div>
+                            <ul class="footer-timing">
+                                <li>Maandag t/m vrijdag zijn wij geopen van 08.3 tot 16.30 uur.</li>
                             </ul>
                         </div>    
                         <div class="col">
                             <div class="footer-title">
-                                <h3>Contact</h3>
+                                <h3>Menu</h3>
                             </div>
                             <ul class="footer-menu">
-                                <li>Tel. <a href="tel:0548538500">0548 - 538500</a></li>
-                                <li><a href="mailto:info@aabo-rijssen.nl">info@aabo-rijssen.nl</a></li>
+                                <li><a href="#" title="Diensten" target="_blank">Diensten</a></li>
+                                <li><a href="#" title="Nieuws" target="_blank">Nieuws</a></li>
+                                <li><a href="#" title="Sectoren" target="_blank">Sectoren</a></li>
+                                <li><a href="#" title="Werken bij" target="_blank">Werken bij</a></li>
+                                <li><a href="#" title="Contact" target="_blank">Contact</a></li>
+                                <li><a href="#" title="Over ons" target="_blank">Over ons</a></li>
                             </ul>
                         </div>
                         <div class="col">
@@ -357,11 +372,13 @@
         <div class="footer-bottom">
         </div>
     </footer>
+    </footer>
     <!-- footer section end -->
 </div><!--/#wrapper-->
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/stickyfill.min.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
+<script src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/general.js"></script>
 </body>
 </html>
