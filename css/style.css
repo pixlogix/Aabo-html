@@ -923,6 +923,9 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .home-news-card figure img {
 	border-radius: 20px;
 	border-bottom-left-radius: 0;
+	width: 100%;
+	transition: all 0.3s linear;
+	transform: scale(1);
 }
 
 .home-news-info h5 {line-height: 1;margin-bottom: 16px;color: #3d5584;}
@@ -969,10 +972,10 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 	display: flex;
 }
 
-.home-news-card figure img {
+/* .home-news-card figure img {
 	transition: all 0.3s linear;
 	transform: scale(1);
-}
+} */
 
 .home-news-card figure a:hover img {
 	transform: scale(1.1);
