@@ -2887,12 +2887,14 @@ h4 { font-size: 20px;}
 
 
 @media only screen and (max-width: 479px) {
-	.newsSwiper .col { width: 100%; }
+	.newsSwiper .col { width: 100%; padding-bottom: 40px; }
+	.newsSwiper .col:last-child { padding-bottom: 0; }
 	.newsletter-row .cols3 .col { width: 100%;}
 	.newsletter-year .button { margin-left: 15px;}
 	.newsletter-year { max-width: 300px; }
 	.newsSwiper .swiper-button-next { right: 30%; }
 	.newsSwiper .swiper-button-prev { left: 30%; }
+	.news-titles { margin: 0 auto;}
 }
 
 /* News Pages Responsive CSS Complete*/
@@ -3087,7 +3089,7 @@ h4 { font-size: 20px;}
 
 	.vacancies-details .accordion-databox .accordion-row h5 { font-size: 28px; }
 	.vacancies-details .accordion-data h6 { font-size: 28px; }
-	.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 65px; }
+	.vacancies-details .accordion-databox .accordion-row { padding: 12px 65px; }
 	.vacancies-section { padding: 100px 0;}
 	.vacancies-header { margin-bottom: 60px;}
 	.vacancies-contact li { margin-right: 40px; }
@@ -3136,7 +3138,7 @@ h4 { font-size: 20px;}
 
 	.vacancies-details .accordion-data h6 { font-size: 24px; }
 	.vacancies-details .accordion-databox .accordion-row h5 { font-size: 24px; }
-	.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 35px; }
+	.vacancies-details .accordion-databox .accordion-row { padding:12px 35px; }
 	.vacancies-section { padding: 70px 0;}
 	.vacancies-header { margin-bottom: 40px; }
 	.vacancies-details .accordion-data { padding: 25px 0;}
@@ -3144,6 +3146,8 @@ h4 { font-size: 20px;}
 	.vacancies-contact li { width: 50%; margin-right: 0; }
 	.vacancies-contact li:last-child { margin-top: 20px; }
 	.vacancies-contact ul { flex-wrap: wrap; }
+	.workplace-details i { font-size: 85px; }
+	
 	
 	
 }
@@ -3156,7 +3160,7 @@ h4 { font-size: 20px;}
 	.workplace-row .col:last-child { margin-bottom: 0; } 
 	.home-our-expert-section.application { padding: 50px 0; }
 	.application-section { padding: 50px 0;}
-	.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 25px; }
+	.vacancies-details .accordion-databox .accordion-row { padding: 12px 25px; }
 	.vacancies-section { padding: 50px 0;}
 	.vacancies-header { margin-bottom: 30px; }
 	
@@ -3167,6 +3171,7 @@ h4 { font-size: 20px;}
 	.vacancies-details .accordion-data h6 { font-size: 20px; }
 	.vacancies-details .accordion-data p { margin: 10px 0 15px; }
 	.vacancies-details .accordion-data { padding: 20px 0; }
+	.workplace-details i { font-size: 75px; }
 }
 
 @media only screen and (max-width: 479px) {
@@ -3183,6 +3188,8 @@ h4 { font-size: 20px;}
 	.vacancies-contact li:last-child { margin-top: 0; }
 	.vacancies-contact { margin-bottom: 0; }
 	.vacancies-details .accordion-data { padding: 15px 0; }
+	.vacancies-details .accordion-databox .accordion-row h5 span { display: block;}
+	.workplace-details i { font-size: 70px; }
 }
 
 

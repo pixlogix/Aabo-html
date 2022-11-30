@@ -454,9 +454,9 @@ table caption + thead tr:first-child th, table caption + thead tr:first-child td
 .accordion-databox .accordion-row:first-child { border-top:0; }
 .accordion-databox .accordion-row h5 { cursor:pointer; margin:0; background:#f3f3f3; color:#555; position:relative; padding:16px 54px 16px 16px; font-weight:600; font-size:15px; margin-bottom:7px; text-transform:uppercase; }
 .accordion-databox .accordion-row h5:before { position:absolute; right:0; top:0; content:''; width:54px; height:100%; z-index:1; background:rgba(0,0,0,0.08); } 
-.accordion-databox .accordion-row h5:after { content:''; position:absolute; right:18px; top:50%; margin-top:-4px; border-top:solid 8px #818181; border-left:solid 8px transparent; border-right:solid 8px transparent; z-index:2; transition: all 350ms ease-in-out;  }
+.accordion-databox .accordion-row h5:after { content: '\e901'; position:absolute; top:50%; z-index:2; transition: all 350ms ease-in-out;  font-family: 'icomoon'; font-size: 28px;; right: 0;transform: translateY(-50%); }
 .accordion-databox .accordion-row h5.open { color:#272c2f;}
-.accordion-databox .accordion-row h5.open:after { border-top:0; border-bottom:solid 8px #272c2f; }
+.accordion-databox .accordion-row h5.open:after { border-top:0; border-bottom: none; transition: all 350ms ease-in-out; transform: rotate(180deg); margin-top: -15px; }
 .accordion-data { display:none; padding:15px 0; }
 .accordion-data p { padding:0 6px; margin:20px 0 0; }
 .accordion-data p:first-child { margin-top:0; }
@@ -2892,18 +2892,16 @@ body.overflowhidden .main-bannerbox {
 /*news-section*/
 
 .news-section { padding: 150px 0; }
-.news-titles { border-radius: 20px; margin-bottom: 45px; box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.1); background-color: #f2f2f3; overflow: hidden; max-width: 375px; }
-.news-titles img { transition: all 350ms ease-in-out; }
-.news-titles a:hover img { transform: scale(1.2); }
+.news-titles { border-radius: 20px; margin-bottom: 65px; box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.1); background-color: #f2f2f3; overflow: hidden; max-width: 375px; }
+.news-titles img { transition: all 350ms ease-in-out; display: block; width: 100%; transform: scale(1); }
+.news-titles a:hover img { transform: scale(1.1); }
 .news-titles figure { overflow: hidden; border-radius: 12px; }
 .news-content { padding: 16px 34px 28px 28px;  }
 .news-content p { line-height: 1.2; margin-bottom: 15px; }
 .news-content .button.btn-outline { font-size: 17px; padding: 5px 10px; }
-.newsSwiper .swiper-button-next, .newsSwiper .swiper-button-prev { bottom: 0; top: auto; border: 1px solid #ac779f; padding: 26px 29px; color: #ac779f; border-radius: 8px; }
-.newsSwiper .swiper-button-next:after, .newsSwiper .swiper-button-prev:after { font-size: 34px; }
-.newsSwiper .swiper-button-next { right: 44%; left: auto; transform: translate(-50%); }
-.newsSwiper .swiper-button-prev { left: 44%; right: auto; transform: translateX(-50%); }
-.swiper.newsSwiper { padding: 60px 0; }
+
+.news-page ul.page { padding: 0; margin: 0; list-style-type: none; display: flex; align-items: center; justify-content: center; }
+
 
 /* News Section complete*/
 
@@ -2923,6 +2921,9 @@ body.overflowhidden .main-bannerbox {
 .newsletter-year li:first-child { padding-top: 30px; }
 .newsletter-year li:last-child { padding-bottom: 10px; }
 .newsletter-year i { position: absolute; right: 0px; font-size: 22px; bottom: 0; }
+.news-page i { border: 1px solid #ac779f; font-size: 34px; padding: 9px 12px; border-radius: 8px; color: #ac779f; }
+.news-page li { margin-right: 15px; }
+.news-page li:last-child { margin-right: 0; }
 
 
 /* News Page complete */
@@ -2955,7 +2956,7 @@ body.overflowhidden .main-bannerbox {
 .sector-details h5 { font-size: 28px; font-weight: 400; line-height: 1.2; margin-bottom: 15px; transition: all 350ms ease-in-out; }
 .sector-details p { font-size: 15px; color: #2f56a4; line-height: 1.2; transition: all 350ms ease-in-out; }
 .sector-row a:hover { text-decoration: none; }
-.sector-details button.btn-outline { padding: 3px 18px; font-size: 17px; border-radius: 3px; }
+.sector-details .button.btn-outline { padding: 3px 18px; font-size: 17px; border-radius: 3px; }
 .home-service-info:hover h5 { color: #ffffff; }
 .home-service-info:hover p { color: #ffffff; }
 .home-our-expert-section.sector { margin-top: -229px; }
@@ -2996,7 +2997,7 @@ input.textbox.place { width: 294px; }
 .contact-content p { font-size: 23px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
 .contact-content a { font-size: 21px; font-weight: 400; line-height: 1.2; text-decoration: none; }
 .contact-content span { display: block; }
-.contact-content i { font-size: 46px; margin-bottom: 46px; display: block; }
+.contact-content i { font-size: 46px; margin-bottom: 46px; display: block; color: #ac779f; }
 
 
 .home-our-expert-section.contact { margin-top: 0; padding: 175px 0 110px; background-position: top; background-repeat: no-repeat; background-size: cover; z-index: 1; position: relative; }
@@ -3022,20 +3023,20 @@ input.textbox.place { width: 294px; }
 
 .work-place-section { background: #9bc5ea; padding: 115px 0; text-align: center; }
 .workplace-details i { font-size: 120px; transition: all 350ms ease-in-out; display: block; }
-.workplace-details:hover i { transform: scale(1.2); }
+.workplace-details { transition: all 350ms ease-in-out; }
+.workplace-details:hover { transform: scale(1.1); }
 .workplace-details h3 { font-weight: 400; font-size: 52px; transition: all 350ms ease-in-out; }
-.workplace-details:hover h3 { transform: scale(1.05);}
 .workplace-row a:hover { text-decoration: none; }
 
 .vacancies-section { padding: 140px 0; text-align: center; }
 .vacancies-header { margin-bottom: 75px; }
 .vacancies-details .accordion-databox .accordion-row h5 { background: #ffffff; font-size: 32px; color: #ac779f; font-weight: 400; text-transform: initial; padding: 0; margin: 0; transition: all 350ms ease-in-out; }
-.vacancies-details .accordion-databox .accordion-row { padding: 12px 20px 12px 75px; border: 1px solid #ac779f; border-radius: 12px; text-align: left; margin-bottom: 15px; }
+.vacancies-details .accordion-databox .accordion-row { padding: 12px 75px; border: 1px solid #ac779f; border-radius: 12px; text-align: left; margin-bottom: 15px; }
 .vacancies-details .accordion-databox .accordion-row h5 span { font-weight: 700; }
 .vacancies-details { max-width: 987px; margin: 0 auto; }
 .vacancies-details .accordion-databox .accordion-row h5:before { display: none; }
-.vacancies-details .accordion-databox .accordion-row h5:after { content: '\e901'; font-family: 'icomoon'; border-left: none; border-right: none; border-top: none; font-size: 28px; margin-top: 0; right: 0; transform: translateY(-50%); transition: all 350ms ease-in-out; } 
-.vacancies-details .accordion-databox .accordion-row h5.open:after { border-bottom: none; }
+/* .vacancies-details .accordion-databox .accordion-row h5:after { content: '\e901'; font-family: 'icomoon'; border-left: none; border-right: none; border-top: none; font-size: 28px; margin-top: 0; right: 0; transform: translateY(-50%); } 
+.vacancies-details .accordion-databox .accordion-row h5.open:after { border-bottom: none; } */
 .vacancies-details .accordion-data h6 { font-size: 32px; font-weight: 400; color: #ac779f; margin: 0; }
 .vacancies-details .accordion-data { padding: 35px 0; }
 .vacancies-details .accordion-data p { padding: 0; margin: 25px 0 30px; max-width: 790px; }
@@ -3047,18 +3048,18 @@ input.textbox.place { width: 294px; }
 .vacancies-contact li { margin-right: 45px; }
 .vacancies-contact li:last-child { margin-right: 0px; }
 .vacancies-section .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { line-height: 0; width: 11px; border-radius: 6px; max-height: 92px; background-color: #ac779f; }
-.accordian-section.mCustomScrollbar._mCS_2 { max-height: 560px; overflow: auto; }
+.accordian-section.mCustomScrollbar { max-height: 560px; overflow: auto; }
 .vacancies-contact { margin-bottom: 50px; }
 .vacancies-contact a:hover { text-decoration: none; color: #2d55a4; }
 .vacancies-contact a:hover i { color: #2d55a4; }
 .vacancies-contact .button:hover { background: #ac779f; }
 .vacancies-contact .button:hover { background-color: #2d55a4; color: #ffffff; }
 .accordion-row .mCSB_draggerContainer { width: 11px; background-color: #f0efef; border-radius: 6px; max-height: 510px; }
-.mCSB_scrollTools .mCSB_dragger { max-height: 92px; height: auto; color: #f0efef;}
+.mCSB_scrollTools .mCSB_dragger { max-height: 92px!important; height: auto; color: #f0efef;}
 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail { max-height: 0; height: 0; }
-.vacancies-details .accordion-databox .accordion-row h5.open::after { border-bottom: none; rotate: 180deg; transform: translateY(15px); transition: all 350ms ease-in-out; }
+/* .vacancies-details .accordion-databox .accordion-row h5.open::after { border-bottom: none; rotate: 180deg; transform: translateY(15px); transition: all 350ms ease-in-out; } */
 #mCSB_2_dragger_vertical { height: 92px!important; }
-.mCSB_scrollTools a + .mCSB_draggerContainer { margin: 60px 0; }
+/* .mCSB_scrollTools a + .mCSB_draggerContainer { margin: 60px 0; } */
 
   
 
