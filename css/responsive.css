@@ -3013,6 +3013,7 @@ h4 { font-size: 20px;}
 	.map iframe {
 		width: 520px; height: 900px; }
 	.info-form { padding: 100px 0;}
+	.home-our-expert-section.contact { padding: 100px 0; }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -3020,6 +3021,11 @@ h4 { font-size: 20px;}
 	.map iframe { width: 370px; height: 825px; }
 	.contact-mode { padding: 100px 0; }
 	.contact-content i { font-size: 42px; margin-bottom: 40px; }
+	.home-our-expert-section.contact { padding: 80px 0; }
+	input.textbox.nearby { width: 70px; }
+	input.textbox.place { width: 230px; }
+	.contact-content a { font-size: 20px; }
+	.checkbox .input-helper::before { width: 18px; height: 18px; }
 
 
 }
@@ -3028,11 +3034,13 @@ h4 { font-size: 20px;}
 	.contact-locations .col { width: 100%; }
 	.map iframe { width: 100%; height: auto; }
 	.contact-locations .cols.cols2 { flex-direction: column-reverse; }
-	.info-form { margin-left: 20px; padding: 50px 0 30px; }
+	.info-form { margin-left: 20px; padding: 50px 0 30px; max-width: 550px; }
+	.info-form .form-block .form-group label { display: block; }
 	.contact-mode { padding: 80px 0; }
 	.contact-content i { font-size: 40px; margin-bottom: 30px; }
 	.contact-content p { margin-bottom: 10px; font-size: 20px; }
 	.contact-content a { font-size: 19px; }
+	.home-our-expert-section.contact { padding: 50px 0; }
 } 
 
 @media only screen and (max-width: 567px){
@@ -3041,6 +3049,9 @@ h4 { font-size: 20px;}
 	.contact-mode-row .col { width: 50%; margin-bottom: 30px; }
 	.contact-content p { margin-bottom: 5px; font-size: 16px; }
 	.contact-content a { font-size: 15px;}
+	.home-our-expert-section.contact { padding: 40px 0; }
+	.info-form { max-width: 420px; }
+	.info-form input.button.btn-outline { font-size: 14px; }
 }
 
 @media only screen and (max-width: 479px) {
@@ -3052,6 +3063,7 @@ h4 { font-size: 20px;}
 	.info-form input.textbox.street { display: block; width: 100%; }
 	.address { display: block; }
 	.address .form-group:last-child { margin: 0;}
+	.info-form { max-width: 290px; }
 }
 
 
@@ -3064,8 +3076,8 @@ h4 { font-size: 20px;}
 	.work-place-section { padding: 110px 0; }
 	.workplace-details i { font-size: 110px;}
 	.workplace-details h3 { font-size: 48px; }
-	.application-process { scale: 0.9; }
-	.application-details h6 { font-size: 30px;}
+	/* .application-process { scale: 0.95; } */
+	.application-details h6 { font-size: 30px; line-height: 1; }
 	.application-details { width: 250px; top: -200px;}
 	.application-header { margin-bottom: 50px;}
 	.home-our-expert-section.application { padding: 200px 0 150px;}
@@ -3074,7 +3086,10 @@ h4 { font-size: 20px;}
 	.vacancies-details .accordion-data h6 { font-size: 30px; }
 	.vacancies-section { padding: 120px 0;}
 	.vacancies-header { margin-bottom: 70px;}
+	.application-process { transform: scale(0.95);}
 }
+
+
 
 @media only screen and (max-width: 1200px) {
 	.default-company-info-section.work-at { padding: 120px 0;}
@@ -3090,8 +3105,15 @@ h4 { font-size: 20px;}
 	.vacancies-details .accordion-databox .accordion-row { padding: 12px 65px; }
 	.vacancies-section { padding: 100px 0;}
 	.vacancies-header { margin-bottom: 60px;}
-	.vacancies-contact li { margin-right: 40px; }
+	/* .vacancies-contact li { margin-right: 40px; }
 	.vacancies-contact a { padding-left: 35px; }
+	.application-details p { font-size: 17px; }
+	.application-details { top: -180px; } */
+	
+	.application-process { transform: scale(0.90);}
+	.application-details { width: 240px;}
+	
+	
 }
 
 @media only screen and (max-width: 1023px) {
@@ -3102,7 +3124,7 @@ h4 { font-size: 20px;}
 	.workplace-details h3 { font-size: 36px; }
 	.application-details h6 { font-size: 23px; }
 	.application-details p { font-size: 16px; }
-	.application-details { width: 200px; }
+	.application-details { width: 200px; top: -180px; }
 	.application-header { margin-bottom: 30px; }
 	.home-our-expert-section.application { padding: 120px 0 100px;}
 
@@ -3114,23 +3136,23 @@ h4 { font-size: 20px;}
 	.vacancies-contact a { font-size: 18px; }
 	.vacancies-contact li { margin-right: 25px; }
 	.vacancies-details .accordion-data { padding: 30px 0;} 
+	
 }
 
 @media only screen and (max-width: 767px) {
 	.default-company-info-section.work-at { padding: 80px 0;}
 	.work-at .col { width: 100%; }
 	.workat-image { margin-bottom: 30px;}
-	.application-details h6 { font-size: 22px; word-break: break-word; }
+	/* .application-details h6 { font-size: 21px; word-break: break-word; }
 	.application-details { width: 160px; top: -230px; }
-	.application-process { transform: scale(0.85); }
 	.application-details p { font-size: 15px; }
-	.application-header { margin-bottom: 0px; }
+	.application-header { margin-bottom: 40px; } */
 
 	.work-place-section { padding: 50px 0; }
 	.workplace-details h3 { font-size: 28px; }	  
 	.home-our-expert-section.application { padding: 80px 0; }
-	.application-section { padding: 60px;}
-	.application-process { padding: 200px 0 150px; }
+	/* .application-section { padding: 60px;}
+	.application-process { padding: 200px 0 150px; } */
 
 	.vacancies-details .accordion-data p { margin: 15px 0 20px;}
 
@@ -3145,6 +3167,21 @@ h4 { font-size: 20px;}
 	.vacancies-contact li:last-child { margin-top: 20px; }
 	.vacancies-contact ul { flex-wrap: wrap; }
 	.workplace-details i { font-size: 85px; }
+
+	.application-process .cols { flex-direction: column; }
+	.application-process .col { width: 100%; justify-content: flex-start; margin-bottom: 30px; align-items: flex-start; }
+	.application-process .col:nth-child(2n) .application-number::before { top: 0; }	  
+	.application-process .col:nth-child(even) .application-details { top:0; flex-direction: column-reverse;}
+	.application-details { width: 60%; position: relative; left: auto; top: 0; flex-direction: column-reverse; text-align: left; margin-left: 30px; align-items: flex-start; }
+	.application-details h6 { text-align: left;}
+	.application-process .col::before { width: 0; }
+	.application-process .col:first-child::before { display: block; }
+	.application-process { padding: 0;}
+	.application-number::before { height: 130px; top: 0; z-index: -1; }
+	.application-process .col:last-child { margin-bottom: 0; } 
+	.application-section { padding: 50px 0 20;}
+	.application-process .col:last-child .application-number::before { height: 0;}
+	.accordian-section.mCustomScrollbar { height: 500px; }
 	
 	
 	
@@ -3152,12 +3189,12 @@ h4 { font-size: 20px;}
 
 @media only screen and (max-width: 567px) {
 	/* .application-process { transform: scale(0.7); } */
-	.application-details p { font-size: 14px; }
+	/* .application-details p { font-size: 14px; }
 	.application-details { width: 120px; top: -250px;}
 	.workplace-row .col { width: 33.333333%; margin-bottom: 20px; }	  
-	.workplace-row .col:last-child { margin-bottom: 0; } 
+	.workplace-row .col:last-child { margin-bottom: 0; }  */
 	.home-our-expert-section.application { padding: 50px 0; }
-	.application-section { padding: 50px 0;}
+	/* .application-section { padding: 50px 0;} */
 	.vacancies-details .accordion-databox .accordion-row { padding: 12px 25px; }
 	.vacancies-section { padding: 50px 0;}
 	.vacancies-header { margin-bottom: 30px; }
@@ -3170,6 +3207,9 @@ h4 { font-size: 20px;}
 	.vacancies-details .accordion-data p { margin: 10px 0 15px; }
 	.vacancies-details .accordion-data { padding: 20px 0; }
 	.workplace-details i { font-size: 75px; }
+	.application-number h4 { font-size: 28px; }
+	.application-process .col { margin-bottom: 20px; }
+	
 }
 
 @media only screen and (max-width: 479px) {
@@ -3179,7 +3219,6 @@ h4 { font-size: 20px;}
 	.workplace-row .col { width: 50%; margin-bottom: 20px; }	
 	.workplace-row .col:nth-last-child(2) { margin-bottom: 0; }
 
-	.application-details { width: 110px; transform: scale(0.85);}
 	.vacancies-header { margin-bottom: 20px; }
 
 	.vacancies-contact li { margin-bottom: 15px; width: 100%; }
@@ -3188,6 +3227,8 @@ h4 { font-size: 20px;}
 	.vacancies-details .accordion-data { padding: 15px 0; }
 	.vacancies-details .accordion-databox .accordion-row h5 span { display: block;}
 	.workplace-details i { font-size: 70px; }
+	.application-number h4 { font-size: 24px; }
+	.application-details h6 { font-size: 20px; }
 }
 
 
