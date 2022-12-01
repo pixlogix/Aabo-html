@@ -3179,9 +3179,10 @@ h4 { font-size: 20px;}
 	.application-process { padding: 0;}
 	.application-number::before { height: 130px; top: 0; z-index: -1; }
 	.application-process .col:last-child { margin-bottom: 0; } 
-	.application-section { padding: 50px 0 20;}
+	.application-section { padding: 50px 0 20px;}
 	.application-process .col:last-child .application-number::before { height: 0;}
 	.accordian-section.mCustomScrollbar { height: 500px; }
+	.application-header { margin-bottom: 10px; }
 	
 	
 	

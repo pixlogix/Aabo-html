@@ -3049,7 +3049,7 @@ input.textbox.place { width: 294px; }
 .vacancies-contact li { margin-right: 45px; }
 .vacancies-contact li:last-child { margin-right: 0px; }
 .vacancies-section .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { line-height: 0; width: 11px; border-radius: 6px; background-color: #ac779f; }
-.accordian-section { height: 420px; overflow: auto; }
+.accordian-section { height: 440px; overflow: auto; }
 .vacancies-contact { margin-bottom: 50px; }
 .vacancies-contact a:hover { text-decoration: none; color: #2d55a4; }
 .vacancies-contact a:hover i { color: #2d55a4; }
