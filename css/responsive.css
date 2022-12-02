@@ -3254,7 +3254,9 @@ h4 { font-size: 20px;}
 @media only screen and (max-width: 1700px) {
 	.timeline-content { left: calc(100% - 110px); }
 	.timeline-year span { font-size: 95px; }
-	.timeline-circle { width: 75px; height: 75px; }
+	.timeline-circle span { width: 75px; height: 75px; }
+
+	.timeline-slider .line-circle:before { height: 75px; width: 75px; }
 	.slider-section { min-height: 950px; }
 	.history-section { padding: 90px 0;}
 	.history-header { margin-bottom: 70px; }
@@ -3281,7 +3283,8 @@ h4 { font-size: 20px;}
 @media only screen and (max-width: 1300px) {
 	.timeline-content { left: calc(100% - 70px); padding: 15px 25px 35px; }	 
 	.timeline-content p { font-size: 18px; } 
-	.timeline-circle { width: 60px; height: 60px; }
+	.timeline-circle span { width: 60px; height: 60px; border: 11px solid #ac779f; }
+	.timeline-slider .line-circle:before { height: 60px; width: 60px; border: 11px solid #ac779f; }
 	.slider-section { min-height: 800px; }
 	.history-section { padding: 70px 0; }
 	.history-header { margin-bottom: 40px; }
@@ -3319,7 +3322,8 @@ h4 { font-size: 20px;}
 	.timeline-content p { margin-bottom: 25px; }
 	.timeline-content h5 { font-size: 26px; }
 	.timeline-content h4 { font-size: 36px; margin-bottom: 0px;}
-	.timeline-circle { width: 50px; height: 50px; border: 8px solid #ac779f; margin-top: -20px; }
+	.timeline-circle span { width: 50px; height: 50px; border: 8px solid #ac779f; margin-top: -20px; }
+	.timeline-slider .line-circle:before { height: 50px; width: 50px; border: 8px solid #ac779f;  }
 	.history-header { margin-bottom: 30px; }
 	.timeline-content p { margin-bottom: 20px; }
 	.director-image { max-width: 200px; margin: 0 auto;}
@@ -3336,7 +3340,8 @@ h4 { font-size: 20px;}
 	.timeline-year p { font-size: 13px; }
 	.timeline-year span { font-size: 35px; display: block; margin-top: 5px; }
 	.timeline-content { left: 0; right: auto; margin-left: 0; margin-top: 150px; }
-	.timeline-circle { width: 35px; height: 35px; border: 5px solid #ac779f; margin-top: -14px; }
+	.timeline-circle span { width: 35px; height: 35px; border: 5px solid #ac779f; margin-top: -14px; }
+	.timeline-slider .line-circle:before { height: 35px; width: 35px; border: 5px solid #ac779f; }
 	.slider-section { min-height: 810px; }
 	.timeline-content p { font-size: 14px; }
 	.slider-section { min-height: 730px; }
