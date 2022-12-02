@@ -3364,7 +3364,8 @@ h4 { font-size: 20px;}
 
 @media only screen and (max-width: 567px) {
 	.timeline-slider .swiper-slide.swiper-slide-active .timeline-content { width: 300px; }
-	.timeline-content { padding: 15px 15px 35px; }
+	.timeline-content { padding: 15px 15px 35px; margin-top: 120px; }
+	.timeline-slider .swiper-slide.swiper-slide-active .line-circle { height: 70px; }
 	.slider-section { min-height: 660px; }
 	.timeline-content p { margin-bottom: 10px; }
 	.history-header { margin-bottom: 20px; }
