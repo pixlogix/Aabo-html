@@ -1557,6 +1557,22 @@ body.overflowhidden .main-bannerbox {
 }
 
 
+/* 404 page css */
+
+.page-content {
+	text-align: center;
+	padding: 120px 0;
+}
+
+.page-content .button {
+	margin-top: 20px;
+	background: #ab779f;
+}
+.page-content .button:hover {
+	background: #2d55a4;
+}
+
+
 
 
 
