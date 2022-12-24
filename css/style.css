@@ -1546,6 +1546,18 @@ body.overflowhidden .main-bannerbox {
 
 
 
+/* news page css */
+.news-content h5 a {
+	transition: all 0.3s linear;
+}
+
+.news-content h5 a:hover {
+	text-decoration: none;
+	color: #a37a9d;
+}
+
+
+
 
 
 
